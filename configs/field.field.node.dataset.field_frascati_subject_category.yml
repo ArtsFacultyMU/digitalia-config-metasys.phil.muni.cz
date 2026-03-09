@@ -1,0 +1,29 @@
+uuid: b0c51688-4100-46f7-8c2e-8000eb3382d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_frascati_subject_category
+    - node.type.dataset
+    - taxonomy.vocabulary.frascati_subject_category
+id: node.dataset.field_frascati_subject_category
+field_name: field_frascati_subject_category
+entity_type: node
+bundle: dataset
+label: 'Frascati Subject Category'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:filter_existing_terms'
+  handler_settings:
+    target_bundles:
+      frascati_subject_category: frascati_subject_category
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

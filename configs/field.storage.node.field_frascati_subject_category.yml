@@ -1,0 +1,20 @@
+uuid: a223db9c-5aab-4069-a6a1-f20c00253a20
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_frascati_subject_category
+field_name: field_frascati_subject_category
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

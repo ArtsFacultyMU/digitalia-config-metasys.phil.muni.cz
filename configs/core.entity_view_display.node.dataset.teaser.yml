@@ -24,6 +24,7 @@ dependencies:
     - field.field.node.dataset.field_edtf_date_created
     - field.field.node.dataset.field_feature_specification
     - field.field.node.dataset.field_feature_type
+    - field.field.node.dataset.field_frascati_subject_category
     - field.field.node.dataset.field_funding_reference
     - field.field.node.dataset.field_instrument
     - field.field.node.dataset.field_language
@@ -97,6 +98,7 @@ hidden:
   field_edtf_date_created: true
   field_feature_specification: true
   field_feature_type: true
+  field_frascati_subject_category: true
   field_funding_reference: true
   field_gemini_uri: true
   field_instrument: true

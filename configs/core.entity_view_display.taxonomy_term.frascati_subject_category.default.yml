@@ -1,0 +1,37 @@
+uuid: 9c28905b-40b5-4b06-bb65-4981cc249260
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.frascati_subject_category.field_authority_link
+    - taxonomy.vocabulary.frascati_subject_category
+  module:
+    - controlled_access_terms
+    - text
+id: taxonomy_term.frascati_subject_category.default
+targetEntityType: taxonomy_term
+bundle: frascati_subject_category
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_authority_link:
+    type: authority_formatter_default
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: _blank
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

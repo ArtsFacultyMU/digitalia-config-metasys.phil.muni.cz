@@ -1,0 +1,11 @@
+uuid: 12b33c59-9422-42b2-9699-611e5563b385
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.frascati_subject_category
+id: taxonomy_term.frascati_subject_category
+target_entity_type_id: taxonomy_term
+target_bundle: frascati_subject_category
+default_langcode: site_default
+language_alterable: false

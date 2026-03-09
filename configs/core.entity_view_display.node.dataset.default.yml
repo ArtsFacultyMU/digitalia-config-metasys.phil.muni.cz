@@ -23,6 +23,7 @@ dependencies:
     - field.field.node.dataset.field_edtf_date_created
     - field.field.node.dataset.field_feature_specification
     - field.field.node.dataset.field_feature_type
+    - field.field.node.dataset.field_frascati_subject_category
     - field.field.node.dataset.field_funding_reference
     - field.field.node.dataset.field_instrument
     - field.field.node.dataset.field_language
@@ -97,6 +98,7 @@ third_party_settings:
         description: ''
     group_subject:
       children:
+        - field_frascati_subject_category
         - field_tags
         - field_assessment_type
         - field_object_type
@@ -159,7 +161,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 10
+    weight: 31
     region: content
   field_creators_and_contributors:
     type: entity_reference_entity_view
@@ -338,7 +340,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 14
+    weight: 35
     region: content
   field_feature_type:
     type: entity_reference_label
@@ -346,7 +348,15 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 12
+    weight: 33
+    region: content
+  field_frascati_subject_category:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 29
     region: content
   field_funding_reference:
     type: entity_reference_entity_view
@@ -403,7 +413,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 13
+    weight: 34
     region: content
   field_object_type:
     type: entity_reference_label
@@ -411,7 +421,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 11
+    weight: 32
     region: content
   field_related_people:
     type: entity_reference_entity_view
@@ -467,7 +477,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 7
+    weight: 30
     region: content
   field_technical_info:
     type: text_default
