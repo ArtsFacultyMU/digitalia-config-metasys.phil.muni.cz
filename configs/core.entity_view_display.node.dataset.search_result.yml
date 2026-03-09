@@ -24,6 +24,7 @@ dependencies:
     - field.field.node.dataset.field_edtf_date_created
     - field.field.node.dataset.field_feature_specification
     - field.field.node.dataset.field_feature_type
+    - field.field.node.dataset.field_frascati_subject_category
     - field.field.node.dataset.field_funding_reference
     - field.field.node.dataset.field_instrument
     - field.field.node.dataset.field_language
@@ -108,6 +109,11 @@ content:
     third_party_settings: {  }
     weight: 100
     region: content
+  media_of_entity_view_1:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
 hidden:
   body: true
   did_image: true
@@ -128,6 +134,7 @@ hidden:
   field_edtf_date_coverage: true
   field_feature_specification: true
   field_feature_type: true
+  field_frascati_subject_category: true
   field_funding_reference: true
   field_instrument: true
   field_language: true

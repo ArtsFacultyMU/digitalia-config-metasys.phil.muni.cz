@@ -24,6 +24,7 @@ dependencies:
     - field.field.node.dataset.field_edtf_date_created
     - field.field.node.dataset.field_feature_specification
     - field.field.node.dataset.field_feature_type
+    - field.field.node.dataset.field_frascati_subject_category
     - field.field.node.dataset.field_funding_reference
     - field.field.node.dataset.field_instrument
     - field.field.node.dataset.field_language
@@ -112,7 +113,7 @@ content:
         granularity: 2
         refresh: 60
     third_party_settings: {  }
-    weight: 11
+    weight: 12
     region: content
   field_date_available:
     type: datetime_default
@@ -121,7 +122,7 @@ content:
       timezone_override: ''
       format_type: medium
     third_party_settings: {  }
-    weight: 12
+    weight: 13
     region: content
   field_date_issued:
     type: datetime_default
@@ -130,7 +131,7 @@ content:
       timezone_override: ''
       format_type: medium
     third_party_settings: {  }
-    weight: 14
+    weight: 15
     region: content
   field_date_submitted:
     type: timestamp
@@ -149,7 +150,7 @@ content:
         granularity: 2
         refresh: 60
     third_party_settings: {  }
-    weight: 13
+    weight: 14
     region: content
   field_date_updated:
     type: timestamp
@@ -168,7 +169,7 @@ content:
         granularity: 2
         refresh: 60
     third_party_settings: {  }
-    weight: 15
+    weight: 16
     region: content
   field_date_valid:
     type: edtf_default
@@ -199,7 +200,7 @@ content:
         granularity: 2
         refresh: 60
     third_party_settings: {  }
-    weight: 16
+    weight: 17
     region: content
   field_doi:
     type: string
@@ -207,7 +208,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 19
+    weight: 20
     region: content
   field_edtf_date_collected:
     type: edtf_default
@@ -219,7 +220,7 @@ content:
       day_format: dd
       year_format: 'y'
     third_party_settings: {  }
-    weight: 17
+    weight: 18
     region: content
   field_edtf_date_coverage:
     type: edtf_default
@@ -231,7 +232,7 @@ content:
       day_format: dd
       year_format: 'y'
     third_party_settings: {  }
-    weight: 18
+    weight: 19
     region: content
   field_edtf_date_created:
     type: edtf_default
@@ -251,7 +252,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 20
+    weight: 21
     region: content
   field_feature_type:
     type: entity_reference_label
@@ -259,7 +260,15 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 21
+    weight: 22
+    region: content
+  field_frascati_subject_category:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 34
     region: content
   field_language:
     type: entity_reference_label
@@ -275,7 +284,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 22
+    weight: 24
     region: content
   field_member_of:
     type: entity_reference_label
@@ -290,7 +299,7 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 23
+    weight: 25
     region: content
   field_model:
     type: entity_reference_label
@@ -298,7 +307,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 24
+    weight: 26
     region: content
   field_object_specification:
     type: entity_reference_label
@@ -306,7 +315,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 25
+    weight: 27
     region: content
   field_object_type:
     type: entity_reference_label
@@ -314,7 +323,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 26
+    weight: 28
     region: content
   field_related_resource:
     type: entity_reference_label
@@ -322,7 +331,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 27
+    weight: 29
     region: content
   field_resource_type:
     type: entity_reference_label
@@ -330,14 +339,14 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 21
+    weight: 23
     region: content
   field_series_information:
     type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 28
+    weight: 30
     region: content
   field_subtitle:
     type: string
@@ -345,7 +354,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 29
+    weight: 31
     region: content
   field_table_of_contents:
     type: text_default
@@ -360,14 +369,14 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 30
+    weight: 32
     region: content
   field_technical_info:
     type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 31
+    weight: 33
     region: content
   field_temporal_subject:
     type: entity_reference_label
@@ -376,6 +385,11 @@ content:
       link: true
     third_party_settings: {  }
     weight: 6
+    region: content
+  media_of_entity_view_1:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 11
     region: content
 hidden:
   content_moderation_control: true
