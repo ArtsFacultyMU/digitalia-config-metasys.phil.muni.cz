@@ -9,6 +9,8 @@ settings:
   client_id: c024ba8e-8e60-492a-8b02-d1ff4b4e9a41
   client_secret: b10eadac-b212-4f5f-b355-f73448c2e84834fa6f0d-e421-4ea2-b190-9bea2ec57a82
   iss_allowed_domains: digitalia-platforms.phil.muni.cz
+  prompt:
+    login: login
   issuer_url: ''
   authorization_endpoint: 'https://login.e-infra.cz/oidc/authorize'
   token_endpoint: 'https://login.e-infra.cz/oidc/token'
