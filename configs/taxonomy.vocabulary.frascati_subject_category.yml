@@ -1,0 +1,9 @@
+uuid: 98b2970f-d4ca-40d0-b96a-2c403caa1678
+langcode: en
+status: true
+dependencies: {  }
+name: 'Frascati Subject Category'
+vid: frascati_subject_category
+description: null
+weight: 0
+new_revision: false
