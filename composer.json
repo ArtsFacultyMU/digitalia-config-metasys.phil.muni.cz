@@ -82,6 +82,7 @@
         "drupal/islandora_mirador": "^2",
         "drupal/leaflet": "^10.3",
         "drupal/masquerade": "^2.0",
+        "drupal/metatag": "^2.2",
         "drupal/migrate_tools": "^6.0",
         "drupal/nodeaccess": "^2.0@alpha",
         "drupal/openid_connect": "^3.0@alpha",
