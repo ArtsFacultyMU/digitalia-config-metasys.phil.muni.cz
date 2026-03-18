@@ -34,6 +34,7 @@ dependencies:
     - field.storage.node.field_tags
     - field.storage.node.field_technical_info
     - field.storage.node.field_temporal_subject
+    - field.storage.taxonomy_term.field_external_uri
     - search_api.server.default_solr_server
   module:
     - controlled_access_terms
@@ -206,6 +207,17 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_edtf_date_created
+  field_external_uri:
+    label: 'License » Taxonomy term » External URI'
+    datasource_id: 'entity:node'
+    property_path: 'field_license:entity:field_external_uri'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_license
+        - field.storage.taxonomy_term.field_external_uri
+      module:
+        - taxonomy
   field_feature_specification_name:
     label: 'Feature Specification » Taxonomy term » Name'
     datasource_id: 'entity:node'

@@ -1,0 +1,32 @@
+uuid: cbf39c50-76eb-4e9f-930e-cfd71cff5b12
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.resource_types_coar.field_datacite_resource_type
+    - taxonomy.vocabulary.resource_types_coar
+  module:
+    - text
+id: taxonomy_term.resource_types_coar.default
+targetEntityType: taxonomy_term
+bundle: resource_types_coar
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_datacite_resource_type:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

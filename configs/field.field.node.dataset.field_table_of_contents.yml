@@ -17,7 +17,7 @@ bundle: dataset
 label: 'Table of Contents'
 description: 'A listing of the Table of Contents.'
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

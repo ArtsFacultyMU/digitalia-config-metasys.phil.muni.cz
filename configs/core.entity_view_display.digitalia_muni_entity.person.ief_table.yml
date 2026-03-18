@@ -6,9 +6,12 @@ dependencies:
     - core.entity_view_mode.digitalia_muni_entity.ief_table
     - digitalia_muni_entity.digitalia_muni_entity_type.person
     - field.field.digitalia_muni_entity.person.field_affiliation
+    - field.field.digitalia_muni_entity.person.field_contact
     - field.field.digitalia_muni_entity.person.field_corporate_body_name
+    - field.field.digitalia_muni_entity.person.field_department
     - field.field.digitalia_muni_entity.person.field_first_names
     - field.field.digitalia_muni_entity.person.field_last_names
+    - field.field.digitalia_muni_entity.person.field_link
     - field.field.digitalia_muni_entity.person.field_orcid
     - field.field.digitalia_muni_entity.person.field_ror
 id: digitalia_muni_entity.person.ief_table
@@ -58,5 +61,8 @@ content:
     region: content
 hidden:
   field_affiliation: true
+  field_contact: true
+  field_department: true
+  field_link: true
   langcode: true
   search_api_excerpt: true

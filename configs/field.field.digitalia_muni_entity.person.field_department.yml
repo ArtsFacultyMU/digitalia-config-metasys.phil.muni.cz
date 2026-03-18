@@ -1,0 +1,19 @@
+uuid: 1287d8dc-0124-43a3-b19b-8878efb97fbd
+langcode: en
+status: true
+dependencies:
+  config:
+    - digitalia_muni_entity.digitalia_muni_entity_type.person
+    - field.storage.digitalia_muni_entity.field_department
+id: digitalia_muni_entity.person.field_department
+field_name: field_department
+entity_type: digitalia_muni_entity
+bundle: person
+label: Department
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

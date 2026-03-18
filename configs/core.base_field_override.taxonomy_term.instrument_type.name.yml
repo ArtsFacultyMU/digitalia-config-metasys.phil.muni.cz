@@ -1,0 +1,18 @@
+uuid: 62146a68-24e4-4027-9e5a-abcf83a21e3c
+langcode: cs
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.instrument_type
+id: taxonomy_term.instrument_type.name
+field_name: name
+entity_type: taxonomy_term
+bundle: instrument_type
+label: Název
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

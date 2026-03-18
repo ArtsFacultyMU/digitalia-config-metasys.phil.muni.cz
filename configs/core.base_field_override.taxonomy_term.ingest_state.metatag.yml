@@ -1,0 +1,20 @@
+uuid: faf67e4c-67a1-4297-a82b-80cf7c76401c
+langcode: cs
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.ingest_state
+  module:
+    - metatag
+id: taxonomy_term.ingest_state.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: ingest_state
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The computed meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag_computed

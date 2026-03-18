@@ -1,0 +1,18 @@
+uuid: cdc0b5a3-0d78-47ec-a7c9-94bbb69ba421
+langcode: en
+status: true
+dependencies:
+  module:
+    - digitalia_muni_entity
+id: digitalia_muni_entity.field_contact
+field_name: field_contact
+entity_type: digitalia_muni_entity
+type: email
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

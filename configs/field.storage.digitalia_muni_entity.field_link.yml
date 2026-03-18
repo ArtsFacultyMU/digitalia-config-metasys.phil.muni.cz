@@ -1,0 +1,19 @@
+uuid: 90c3c76e-1ba6-40ee-bb06-8d66d2a516ed
+langcode: en
+status: true
+dependencies:
+  module:
+    - digitalia_muni_entity
+    - link
+id: digitalia_muni_entity.field_link
+field_name: field_link
+entity_type: digitalia_muni_entity
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

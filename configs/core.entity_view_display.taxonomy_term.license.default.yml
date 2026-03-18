@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.taxonomy_term.license.field_access_rights
     - field.field.taxonomy_term.license.field_external_uri
     - field.field.taxonomy_term.license.field_license_text
     - taxonomy.vocabulary.license
@@ -14,6 +15,14 @@ targetEntityType: taxonomy_term
 bundle: license
 mode: default
 content:
+  field_access_rights:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
   field_external_uri:
     type: link
     label: inline

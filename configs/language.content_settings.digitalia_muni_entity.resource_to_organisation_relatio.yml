@@ -1,0 +1,18 @@
+uuid: 4247aef3-b8d8-4af3-90d0-d497bb11f486
+langcode: cs
+status: true
+dependencies:
+  config:
+    - digitalia_muni_entity.digitalia_muni_entity_type.resource_to_organisation_relatio
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: digitalia_muni_entity.resource_to_organisation_relatio
+target_entity_type_id: digitalia_muni_entity
+target_bundle: resource_to_organisation_relatio
+default_langcode: site_default
+language_alterable: false

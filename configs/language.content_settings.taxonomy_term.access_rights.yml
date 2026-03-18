@@ -1,0 +1,16 @@
+uuid: 7508ec1c-1120-406f-8167-f775e323760f
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.access_rights
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.access_rights
+target_entity_type_id: taxonomy_term
+target_bundle: access_rights
+default_langcode: site_default
+language_alterable: false

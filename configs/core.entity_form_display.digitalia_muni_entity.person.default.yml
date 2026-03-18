@@ -5,19 +5,40 @@ dependencies:
   config:
     - digitalia_muni_entity.digitalia_muni_entity_type.person
     - field.field.digitalia_muni_entity.person.field_affiliation
+    - field.field.digitalia_muni_entity.person.field_contact
     - field.field.digitalia_muni_entity.person.field_corporate_body_name
+    - field.field.digitalia_muni_entity.person.field_department
     - field.field.digitalia_muni_entity.person.field_first_names
     - field.field.digitalia_muni_entity.person.field_last_names
+    - field.field.digitalia_muni_entity.person.field_link
     - field.field.digitalia_muni_entity.person.field_orcid
     - field.field.digitalia_muni_entity.person.field_ror
+  module:
+    - link
 id: digitalia_muni_entity.person.default
 targetEntityType: digitalia_muni_entity
 bundle: person
 mode: default
 content:
+  field_contact:
+    type: email_default
+    weight: 28
+    region: content
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
   field_corporate_body_name:
     type: string_textfield
     weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_department:
+    type: string_textfield
+    weight: 26
     region: content
     settings:
       size: 60
@@ -38,6 +59,14 @@ content:
     settings:
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  field_link:
+    type: link_default
+    weight: 27
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
     third_party_settings: {  }
   field_orcid:
     type: string_textfield

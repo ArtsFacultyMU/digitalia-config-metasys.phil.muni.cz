@@ -12,7 +12,7 @@ bundle: dataset
 label: Subtitle
 description: 'Subtitle that complements the dataset title.'
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }

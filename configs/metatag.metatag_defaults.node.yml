@@ -1,0 +1,20 @@
+uuid: 6bc18809-e4e3-4c1a-b073-0e7724082d74
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: rpwvgyEURXLz_JjgMCrkS1rUv-0k3L79BpO-ReN7fDI
+id: node
+label: Content
+tags:
+  canonical_url: '[node:url]'
+  dcterms_date: '[node:field_edtf_date_created]'
+  dcterms_description: '[node:field_abstract]'
+  dcterms_identifier: '[node:field_doi]^[node:url:absolute]'
+  dcterms_publisher: 'Masaryk University'
+  dcterms_relation: '[lindat:media_urls]'
+  dcterms_rights: '[node:field_license:entity:name]'
+  dcterms_subject: 'Archaeology '
+  dcterms_title: '[node:title]'
+  description: '[node:summary]'
+  title: '[node:title] | [site:name]'

@@ -5,7 +5,10 @@ dependencies:
   config:
     - core.entity_view_mode.digitalia_muni_entity.ief_table
     - digitalia_muni_entity.digitalia_muni_entity_type.organisation
+    - field.field.digitalia_muni_entity.organisation.field_contact
     - field.field.digitalia_muni_entity.organisation.field_corporate_body_name
+    - field.field.digitalia_muni_entity.organisation.field_department
+    - field.field.digitalia_muni_entity.organisation.field_link
     - field.field.digitalia_muni_entity.organisation.field_ror
 id: digitalia_muni_entity.organisation.ief_table
 targetEntityType: digitalia_muni_entity
@@ -29,6 +32,9 @@ content:
     weight: 6
     region: content
 hidden:
+  field_contact: true
+  field_department: true
+  field_link: true
   label: true
   langcode: true
   search_api_excerpt: true

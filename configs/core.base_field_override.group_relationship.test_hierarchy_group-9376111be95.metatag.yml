@@ -1,0 +1,20 @@
+uuid: 3d6352ee-10ff-4a19-b260-3a405e886fa4
+langcode: cs
+status: true
+dependencies:
+  config:
+    - group.relationship_type.test_hierarchy_group-9376111be95
+  module:
+    - metatag
+id: group_relationship.test_hierarchy_group-9376111be95.metatag
+field_name: metatag
+entity_type: group_relationship
+bundle: test_hierarchy_group-9376111be95
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The computed meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag_computed

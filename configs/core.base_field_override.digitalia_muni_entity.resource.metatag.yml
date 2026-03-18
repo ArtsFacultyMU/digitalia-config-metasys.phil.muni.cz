@@ -1,0 +1,20 @@
+uuid: 5cbbd2fc-8883-4f0d-9d04-f9af5dcf36eb
+langcode: cs
+status: true
+dependencies:
+  config:
+    - digitalia_muni_entity.digitalia_muni_entity_type.resource
+  module:
+    - metatag
+id: digitalia_muni_entity.resource.metatag
+field_name: metatag
+entity_type: digitalia_muni_entity
+bundle: resource
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The computed meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag_computed

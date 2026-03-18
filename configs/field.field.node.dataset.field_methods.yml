@@ -17,7 +17,7 @@ bundle: dataset
 label: Methods
 description: 'The methodology employed for the study or research.'
 required: true
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

@@ -1,0 +1,20 @@
+uuid: 3d759c6d-6086-4f54-9ca4-2907276d76f4
+langcode: cs
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.resource_types_dcmi
+  module:
+    - metatag
+id: taxonomy_term.resource_types_dcmi.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: resource_types_dcmi
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The computed meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag_computed

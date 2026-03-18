@@ -17,7 +17,7 @@ bundle: dataset
 label: Abstract
 description: 'A brief description of the resource and the context in which the resource was created.'
 required: true
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

@@ -1,0 +1,21 @@
+uuid: 258606a7-a6c8-4cd7-8037-d5d0581cce5b
+langcode: en
+status: true
+dependencies:
+  module:
+    - digitalia_muni_entity
+id: digitalia_muni_entity.field_department
+field_name: field_department
+entity_type: digitalia_muni_entity
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

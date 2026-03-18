@@ -4,13 +4,26 @@ status: true
 dependencies:
   config:
     - digitalia_muni_entity.digitalia_muni_entity_type.organisation
+    - field.field.digitalia_muni_entity.organisation.field_contact
     - field.field.digitalia_muni_entity.organisation.field_corporate_body_name
+    - field.field.digitalia_muni_entity.organisation.field_department
+    - field.field.digitalia_muni_entity.organisation.field_link
     - field.field.digitalia_muni_entity.organisation.field_ror
+  module:
+    - link
 id: digitalia_muni_entity.organisation.default
 targetEntityType: digitalia_muni_entity
 bundle: organisation
 mode: default
 content:
+  field_contact:
+    type: email_default
+    weight: 4
+    region: content
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
   field_corporate_body_name:
     type: string_textfield
     weight: 0
@@ -22,6 +35,22 @@ content:
   field_ror:
     type: string_textfield
     weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_link:
+    type: link_default
+    weight: 3
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_ror:
+    type: string_textfield
+    weight: 2
     region: content
     settings:
       size: 60

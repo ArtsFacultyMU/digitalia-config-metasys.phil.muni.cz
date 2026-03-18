@@ -1,0 +1,18 @@
+uuid: 2440794a-cd64-4dc4-a494-ebe9353750d9
+langcode: cs
+status: true
+dependencies:
+  config:
+    - digitalia_muni_entity.digitalia_muni_entity_type.person
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: digitalia_muni_entity.person
+target_entity_type_id: digitalia_muni_entity
+target_bundle: person
+default_langcode: site_default
+language_alterable: false

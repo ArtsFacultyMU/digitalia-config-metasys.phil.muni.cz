@@ -1,0 +1,9 @@
+uuid: 5ee042d7-4809-4908-8b25-ee663ad3c71e
+langcode: en
+status: true
+dependencies: {  }
+name: 'Resource Types (DataCite)'
+vid: resource_types_datacite
+description: null
+weight: 0
+new_revision: false

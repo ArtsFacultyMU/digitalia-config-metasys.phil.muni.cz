@@ -33,6 +33,7 @@ dependencies:
     - field.field.node.dataset.field_model
     - field.field.node.dataset.field_object_specification
     - field.field.node.dataset.field_object_type
+    - field.field.node.dataset.field_publication_year
     - field.field.node.dataset.field_related_people
     - field.field.node.dataset.field_related_resource
     - field.field.node.dataset.field_resource_type
@@ -47,6 +48,7 @@ dependencies:
   module:
     - content_moderation
     - controlled_access_terms
+    - datetime
     - field_group
     - ief_table_view_mode
     - link
@@ -75,10 +77,6 @@ third_party_settings:
         required_fields: true
     group_time_reference:
       children:
-        - field_edtf_date_created
-        - field_temporal_subject
-        - field_edtf_date_coverage
-        - field_edtf_date_collected
         - field_date_accepted
         - field_date_available
         - field_date_issued
@@ -86,6 +84,11 @@ third_party_settings:
         - field_date_updated
         - field_date_valid
         - field_date_withdrawn
+        - field_edtf_date_created
+        - field_temporal_subject
+        - field_edtf_date_coverage
+        - field_edtf_date_collected
+        - field_publication_year
       label: 'Time Reference'
       region: content
       parent_name: ''
@@ -161,7 +164,7 @@ content:
     third_party_settings: {  }
   field_assessment_type:
     type: options_select
-    weight: 29
+    weight: 16
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -191,9 +194,60 @@ content:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
+  field_date_accepted:
+    type: datetime_timestamp
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_date_available:
+    type: datetime_datelist
+    weight: 0
+    region: content
+    settings:
+      increment: 15
+      date_order: YMD
+      time_type: '24'
+    third_party_settings: {  }
+  field_date_issued:
+    type: datetime_datelist
+    weight: 0
+    region: content
+    settings:
+      increment: 15
+      date_order: YMD
+      time_type: '24'
+    third_party_settings: {  }
+  field_date_submitted:
+    type: datetime_timestamp
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_date_updated:
+    type: datetime_timestamp
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_date_valid:
+    type: edtf_default
+    weight: 0
+    region: content
+    settings:
+      strict_dates: false
+      intervals: true
+      sets: false
+    third_party_settings: {  }
+  field_date_withdrawn:
+    type: datetime_timestamp
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_doi:
     type: string_textfield
-    weight: 14
+    weight: 17
     region: content
     settings:
       size: 60
@@ -282,13 +336,13 @@ content:
     third_party_settings: {  }
   field_language:
     type: options_select
-    weight: 13
+    weight: 16
     region: content
     settings: {  }
     third_party_settings: {  }
   field_license:
     type: options_select
-    weight: 12
+    weight: 13
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -302,15 +356,22 @@ content:
     third_party_settings: {  }
   field_object_specification:
     type: options_select
-    weight: 33
+    weight: 22
     region: content
     settings: {  }
     third_party_settings: {  }
   field_object_type:
     type: options_select
-    weight: 32
+    weight: 21
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_publication_year:
+    type: number
+    weight: 28
+    region: content
+    settings:
+      placeholder: ''
     third_party_settings: {  }
   field_related_people:
     type: inline_entity_form_complex_table_view_mode
@@ -374,7 +435,7 @@ content:
     third_party_settings: {  }
   field_tags:
     type: entity_reference_autocomplete_tags
-    weight: 34
+    weight: 23
     region: content
     settings:
       match_operator: CONTAINS
@@ -396,6 +457,13 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 16
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
   moderation_state:
     type: moderation_state_default
     weight: 0
@@ -410,21 +478,18 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  translation:
+    weight: 11
+    region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   body: true
   created: true
   field_agent_relationship: true
-  field_date_accepted: true
-  field_date_available: true
-  field_date_issued: true
-  field_date_submitted: true
-  field_date_updated: true
-  field_date_valid: true
-  field_date_withdrawn: true
   field_member_of: true
   field_model: true
   field_resource_type: true
-  langcode: true
   path: true
   promote: true
   status: true

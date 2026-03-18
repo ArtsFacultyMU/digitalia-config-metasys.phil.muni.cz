@@ -1,0 +1,29 @@
+uuid: f0ce0308-2b1e-435a-a083-6e00aaad0965
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_access_rights
+    - taxonomy.vocabulary.access_rights
+    - taxonomy.vocabulary.license
+id: taxonomy_term.license.field_access_rights
+field_name: field_access_rights
+entity_type: taxonomy_term
+bundle: license
+label: 'Access rights'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:filter_existing_terms'
+  handler_settings:
+    target_bundles:
+      access_rights: access_rights
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,19 @@
+uuid: db0d0374-8280-4a1c-aa0b-b74a9e7bcb7b
+langcode: en
+status: true
+dependencies:
+  config:
+    - digitalia_muni_entity.digitalia_muni_entity_type.organisation
+    - field.storage.digitalia_muni_entity.field_contact
+id: digitalia_muni_entity.organisation.field_contact
+field_name: field_contact
+entity_type: digitalia_muni_entity
+bundle: organisation
+label: Contact
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

@@ -1,0 +1,16 @@
+uuid: 270a7218-7ccd-4cde-8698-0c47acee3927
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.resource_types_datacite
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.resource_types_datacite
+target_entity_type_id: taxonomy_term
+target_bundle: resource_types_datacite
+default_langcode: site_default
+language_alterable: false

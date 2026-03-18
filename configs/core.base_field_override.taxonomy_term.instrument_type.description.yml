@@ -1,0 +1,21 @@
+uuid: 363c1238-7c17-4bab-8ffc-5176a33e48e4
+langcode: cs
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.instrument_type
+  module:
+    - text
+id: taxonomy_term.instrument_type.description
+field_name: description
+entity_type: taxonomy_term
+bundle: instrument_type
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

@@ -17,7 +17,7 @@ bundle: dataset
 label: 'Technical Information'
 description: 'Detailed information that may be associated with design, implementation, operation, use, and/or maintenance of a process, system, or instrument.'
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

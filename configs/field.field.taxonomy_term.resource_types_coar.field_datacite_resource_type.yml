@@ -1,0 +1,29 @@
+uuid: 43186826-4c09-4a14-a670-81c1223264cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_datacite_resource_type
+    - taxonomy.vocabulary.resource_types_coar
+    - taxonomy.vocabulary.resource_types_datacite
+id: taxonomy_term.resource_types_coar.field_datacite_resource_type
+field_name: field_datacite_resource_type
+entity_type: taxonomy_term
+bundle: resource_types_coar
+label: datacite_resource_type
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:filter_existing_terms'
+  handler_settings:
+    target_bundles:
+      resource_types_datacite: resource_types_datacite
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

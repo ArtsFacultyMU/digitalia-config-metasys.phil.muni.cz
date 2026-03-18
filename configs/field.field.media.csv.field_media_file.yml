@@ -16,7 +16,7 @@ id: media.csv.field_media_file
 field_name: field_media_file
 entity_type: media
 bundle: csv
-label: File
+label: Soubor
 description: ''
 required: true
 translatable: false

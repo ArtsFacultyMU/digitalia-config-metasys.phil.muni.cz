@@ -1,0 +1,19 @@
+uuid: 54e82012-665c-4705-9426-07e8393c5f34
+langcode: en
+status: true
+dependencies:
+  config:
+    - digitalia_muni_entity.digitalia_muni_entity_type.person
+    - field.storage.digitalia_muni_entity.field_contact
+id: digitalia_muni_entity.person.field_contact
+field_name: field_contact
+entity_type: digitalia_muni_entity
+bundle: person
+label: Contact
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

@@ -1,0 +1,9 @@
+uuid: ce940410-bc9b-4fc7-8d0f-2c6263b4a171
+langcode: en
+status: true
+dependencies: {  }
+name: 'Access rights'
+vid: access_rights
+description: 'COAR terms'
+weight: 0
+new_revision: false

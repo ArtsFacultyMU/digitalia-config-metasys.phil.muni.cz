@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.taxonomy_term.license.field_access_rights
     - field.field.taxonomy_term.license.field_external_uri
     - field.field.taxonomy_term.license.field_license_text
     - taxonomy.vocabulary.license
@@ -15,6 +16,16 @@ targetEntityType: taxonomy_term
 bundle: license
 mode: default
 content:
+  field_access_rights:
+    type: entity_reference_autocomplete
+    weight: 26
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   field_external_uri:
     type: link_default
     weight: 1

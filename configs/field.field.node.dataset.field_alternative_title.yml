@@ -9,10 +9,10 @@ id: node.dataset.field_alternative_title
 field_name: field_alternative_title
 entity_type: node
 bundle: dataset
-label: 'Alternative Title'
+label: 'Alternative title'
 description: 'Alternative dataset title - could be abbreviations, transcribing numerical values, etc.'
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }
