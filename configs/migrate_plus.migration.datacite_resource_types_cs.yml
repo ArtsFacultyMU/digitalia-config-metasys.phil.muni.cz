@@ -1,0 +1,38 @@
+uuid: 2576cb1b-39b4-4249-a6ef-5711af4fe9e0
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - islandora_core_feature
+id: datacite_resource_types_cs
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: digitalia
+label: 'DataCite Resource Types CS'
+source:
+  plugin: csv
+  path: ../data/datacite_resource_types.csv
+  header_row_count: 1
+  constants:
+    langcode: cs
+  ids:
+    - DataCiteIRI
+process:
+  tid:
+    plugin: migration_lookup
+    migration: coar_resource_types
+    source: DataCiteIRI
+  name: CzechTerm
+  langcode: constants/langcode
+destination:
+  plugin: 'entity:taxonomy_term'
+  translations: true
+idMap: {  }
+migration_dependencies:
+  required:
+    - datacite_resource_types
+  optional: {  }
+include: null

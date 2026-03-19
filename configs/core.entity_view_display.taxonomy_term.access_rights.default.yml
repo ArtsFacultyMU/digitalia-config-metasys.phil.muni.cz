@@ -1,17 +1,16 @@
-uuid: cbf39c50-76eb-4e9f-930e-cfd71cff5b12
+uuid: e08929c6-f558-415b-956a-c71cd209ebd8
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.taxonomy_term.resource_types_coar.field_authority_link
-    - field.field.taxonomy_term.resource_types_coar.field_datacite_resource_type
-    - taxonomy.vocabulary.resource_types_coar
+    - field.field.taxonomy_term.access_rights.field_authority_link
+    - taxonomy.vocabulary.access_rights
   module:
     - controlled_access_terms
     - text
-id: taxonomy_term.resource_types_coar.default
+id: taxonomy_term.access_rights.default
 targetEntityType: taxonomy_term
-bundle: resource_types_coar
+bundle: access_rights
 mode: default
 content:
   description:
@@ -30,14 +29,6 @@ content:
       url_plain: false
       rel: ''
       target: _blank
-    third_party_settings: {  }
-    weight: 1
-    region: content
-  field_datacite_resource_type:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: true
     third_party_settings: {  }
     weight: 1
     region: content

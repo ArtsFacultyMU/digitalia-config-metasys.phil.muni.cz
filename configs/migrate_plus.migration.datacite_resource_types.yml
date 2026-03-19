@@ -1,0 +1,37 @@
+uuid: bd9ea2ad-ccd0-42f9-9fb9-3edbbb1bd062
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - islandora_core_feature
+id: datacite_resource_types
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: digitalia
+label: 'DataCite Resource Types'
+source:
+  plugin: csv
+  path: ../data/datacite_resource_types.csv
+  header_row_count: 1
+  constants:
+    vid: resource_types_datacite
+    authority_source_datacite: datacite
+  ids:
+    - DataCiteIRI
+process:
+  name: ResourceType
+  vid: constants/vid
+  field_authority_link/source: constants/authority_source_datacite
+  field_authority_link/uri:
+    plugin: urlencode
+    source: DataCiteIRI
+destination:
+  plugin: 'entity:taxonomy_term'
+idMap: {  }
+migration_dependencies:
+  required: {  }
+  optional: {  }
+include: null

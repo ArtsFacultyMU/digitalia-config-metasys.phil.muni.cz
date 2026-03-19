@@ -7,5 +7,5 @@ dependencies:
 id: front_page_intro_text
 title: 'Front page intro text'
 content:
-  value: '<p>Digitalia Platforms is a repository of all Digitalia platforms.</p>'
+  value: '<p>MetaSys is a catalogue of all Digitalia MUNI ARTS platforms. The system is still under development. The metadata from it is used in the National Metadata Directory.</p>'
   format: full_html

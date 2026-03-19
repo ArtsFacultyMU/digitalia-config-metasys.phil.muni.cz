@@ -1,0 +1,30 @@
+ResourceType,DataCiteIRI,CzechTerm
+Book,http://purl.org/spar/datacite/Book,Kniha
+BookChapter,http://purl.org/spar/datacite/BookChapter,Kapitola knihy
+Collection,http://purl.org/spar/datacite/Collection,Sbírka
+ComputationalNotebook,http://purl.org/spar/datacite/ComputationalNotebook,Výpočetní zápisník
+ConferencePaper,http://purl.org/spar/datacite/ConferencePaper,Konferenční příspěvek
+ConferenceProceeding,http://purl.org/spar/datacite/ConferenceProceeding,Konferenční sborník
+DataPaper,http://purl.org/spar/datacite/DataPaper,Datový článek
+Dataset,http://purl.org/spar/datacite/Dataset,Datová sada
+Dissertation,http://purl.org/spar/datacite/Dissertation,Disertace
+Event,http://purl.org/spar/datacite/Event,Událost
+Image,http://purl.org/spar/datacite/Image,Obrázek
+InteractiveResource,http://purl.org/spar/datacite/InteractiveResource,Interaktivní zdroj
+Instrument,http://purl.org/spar/datacite/Instrument,Instrument
+Journal,http://purl.org/spar/datacite/Journal,Časopis
+JournalArticle,http://purl.org/spar/datacite/JournalArticle,Článek v časopise
+Model,http://purl.org/spar/datacite/Model,Model
+OutputManagementPlan,http://purl.org/spar/datacite/OutputManagementPlan,Plán výstupů
+PeerReview,http://purl.org/spar/datacite/PeerReview,Recenze
+PhysicalObject,http://purl.org/spar/datacite/PhysicalObject,Fyzický objekt
+Preprint,http://purl.org/spar/datacite/Preprint,Preprint
+Report,http://purl.org/spar/datacite/Report,Zpráva
+Service,http://purl.org/spar/datacite/Service,Služba
+Software,http://purl.org/spar/datacite/Software,Software
+Sound,http://purl.org/spar/datacite/Sound,Zvuk
+Standard,http://purl.org/spar/datacite/Standard,Standard
+StudyRegistration,http://purl.org/spar/datacite/StudyRegistration,Registrace studie
+Text,http://purl.org/spar/datacite/Text,Text
+Workflow,http://purl.org/spar/datacite/Workflow,Workflow
+Other,http://purl.org/spar/datacite/Other,Jiné

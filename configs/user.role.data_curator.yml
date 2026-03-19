@@ -21,6 +21,7 @@ dependencies:
     - workflows.workflow.research_group_workflow
   module:
     - content_moderation
+    - content_translation
     - digitalia_muni_entity
     - group
     - islandora
@@ -45,6 +46,7 @@ permissions:
   - 'access user profiles'
   - 'create 3d_model media'
   - 'create audio media'
+  - 'create content translations'
   - 'create csv media'
   - 'create dataset content'
   - 'create digitalia_muni_entity'
@@ -82,6 +84,9 @@ permissions:
   - 'mint persistent identifiers'
   - 'revert dataset revisions'
   - 'revert page revisions'
+  - 'translate dataset node'
+  - 'translate page node'
+  - 'update content translations'
   - 'update media'
   - 'use dataset_workflow transition create_new_draft'
   - 'use dataset_workflow transition finalize_draft'

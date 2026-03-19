@@ -1,0 +1,39 @@
+uuid: 844502d0-6e40-4f88-9654-6847417d7b2f
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - islandora_core_feature
+id: coar_access_rights_cs
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: digitalia
+label: 'COAR Access Rights CS'
+source:
+  plugin: csv
+  path: ../data/coar_access_rights.csv
+  header_row_count: 1
+  constants:
+    langcode: cs
+  ids:
+    - iri
+process:
+  tid:
+    plugin: migration_lookup
+    migration: coar_access_rights
+    source: iri
+  name: czech_label
+  description: czech_definition
+  langcode: constants/langcode
+destination:
+  plugin: 'entity:taxonomy_term'
+  translations: true
+idMap: {  }
+migration_dependencies:
+  required:
+    - coar_access_rights
+  optional: {  }
+include: null
