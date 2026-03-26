@@ -1,0 +1,21 @@
+uuid: 05118fb6-1f4e-4ce3-8f5b-6a33a8807310
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_edtf_date_withdrawn
+    - node.type.dataset
+  module:
+    - controlled_access_terms
+id: node.dataset.field_edtf_date_withdrawn
+field_name: field_edtf_date_withdrawn
+entity_type: node
+bundle: dataset
+label: 'Date Withdrawn'
+description: 'The date the resource is removed. It is good practice to include a description that indicates the reason for the retraction or withdrawal.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: edtf

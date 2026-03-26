@@ -42,6 +42,7 @@ module:
   devel_generate: 0
   dgi_image_discovery: 0
   digitalia_muni_dataset_ccmm: 0
+  digitalia_muni_dataset_doi: 0
   digitalia_muni_entity: 0
   digitalia_muni_token: 0
   digitalia_muni_workbench_ingest: 0

@@ -3,6 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.user.user.field_first_names
+    - field.field.user.user.field_last_names
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
@@ -15,6 +17,22 @@ targetEntityType: user
 bundle: user
 mode: default
 content:
+  field_first_names:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 51
+    region: content
+  field_last_names:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 52
+    region: content
   masquerade:
     settings: {  }
     third_party_settings: {  }

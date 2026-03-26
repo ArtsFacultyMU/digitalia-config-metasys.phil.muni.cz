@@ -1,18 +1,18 @@
-uuid: 07767f86-7c40-4ea4-b5fb-08dbe0d57ae6
-langcode: cs
+uuid: bb95d47a-c118-4f04-97f7-218dc2c80ec3
+langcode: en
 status: true
 dependencies:
   module:
     - link
     - node
-id: node.field_data_service
-field_name: field_data_service
+id: node.field_endpoint_url
+field_name: field_endpoint_url
 entity_type: node
 type: link
 settings: {  }
 module: link
 locked: false
-cardinality: 1
+cardinality: -1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

@@ -21,16 +21,16 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 2
+    weight: 0
     region: content
   field_funder:
     type: entity_reference_entity_view
-    label: above
+    label: inline
     settings:
       view_mode: default
       link: true
     third_party_settings: {  }
-    weight: 0
+    weight: 3
     region: content
   field_funding_program:
     type: link
@@ -42,7 +42,7 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 1
+    weight: 2
     region: content
   field_local_identifier:
     type: string
@@ -50,7 +50,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 3
+    weight: 1
     region: content
 hidden:
   langcode: true

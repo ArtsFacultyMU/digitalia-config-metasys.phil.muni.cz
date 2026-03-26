@@ -1,0 +1,21 @@
+uuid: 2a677745-1d18-43a0-a8cb-302d6da0f082
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_edtf_date_accepted
+    - node.type.dataset
+  module:
+    - controlled_access_terms
+id: node.dataset.field_edtf_date_accepted
+field_name: field_edtf_date_accepted
+entity_type: node
+bundle: dataset
+label: 'Date Accepted'
+description: 'The date that the publisher accepted the resource into their system. To indicate the start of an embargo period, use Accepted or Submitted, as appropriate.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: edtf

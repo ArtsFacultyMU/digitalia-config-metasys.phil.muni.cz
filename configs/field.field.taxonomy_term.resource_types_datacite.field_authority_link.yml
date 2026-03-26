@@ -1,0 +1,31 @@
+uuid: 093a4769-40f3-4296-b1ac-df1ffd516375
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_authority_link
+    - taxonomy.vocabulary.resource_types_datacite
+  module:
+    - controlled_access_terms
+id: taxonomy_term.resource_types_datacite.field_authority_link
+field_name: field_authority_link
+entity_type: taxonomy_term
+bundle: resource_types_datacite
+label: 'Authority sources'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  authority_sources:
+    aiscr: 'Archaeological Information System of the Czech Republic'
+    aat: 'Art & Architecture Thesaurus'
+    ccmm: 'Czech Core Metadata Model'
+    coar: 'Confederation of Open Access Repositories'
+    datacite: DataCite
+    wiki: Wikidata
+    other: Other
+  title: 1
+  link_type: 16
+field_type: authority_link

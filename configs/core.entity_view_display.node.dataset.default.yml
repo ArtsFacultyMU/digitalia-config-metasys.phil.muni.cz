@@ -18,9 +18,17 @@ dependencies:
     - field.field.node.dataset.field_date_valid
     - field.field.node.dataset.field_date_withdrawn
     - field.field.node.dataset.field_doi
+    - field.field.node.dataset.field_download_url
+    - field.field.node.dataset.field_edtf_date_accepted
+    - field.field.node.dataset.field_edtf_date_available
     - field.field.node.dataset.field_edtf_date_collected
     - field.field.node.dataset.field_edtf_date_coverage
     - field.field.node.dataset.field_edtf_date_created
+    - field.field.node.dataset.field_edtf_date_issued
+    - field.field.node.dataset.field_edtf_date_submitted
+    - field.field.node.dataset.field_edtf_date_updated
+    - field.field.node.dataset.field_edtf_date_withdrawn
+    - field.field.node.dataset.field_endpoint_url
     - field.field.node.dataset.field_feature_specification
     - field.field.node.dataset.field_feature_type
     - field.field.node.dataset.field_frascati_subject_category
@@ -63,7 +71,7 @@ third_party_settings:
       label: Description
       parent_name: ''
       region: content
-      weight: 6
+      weight: 7
       format_type: fieldset
       format_settings:
         classes: ''
@@ -75,6 +83,7 @@ third_party_settings:
         open: false
     group_time_reference:
       children:
+        - field_publication_year
         - field_temporal_subject
         - field_edtf_date_coverage
         - field_edtf_date_collected
@@ -86,10 +95,15 @@ third_party_settings:
         - field_date_updated
         - field_date_valid
         - field_date_withdrawn
+        - field_edtf_date_accepted
+        - field_edtf_date_available
+        - field_edtf_date_submitted
+        - field_edtf_date_updated
+        - field_edtf_date_withdrawn
       label: 'Time Reference'
       parent_name: ''
       region: content
-      weight: 8
+      weight: 9
       format_type: fieldset
       format_settings:
         classes: ''
@@ -99,17 +113,17 @@ third_party_settings:
         description: ''
     group_subject:
       children:
-        - field_frascati_subject_category
         - field_tags
         - field_assessment_type
         - field_object_type
-        - field_feature_type
         - field_object_specification
         - field_feature_specification
+        - field_frascati_subject_category
+        - field_feature_type
       label: Subject
       parent_name: ''
       region: content
-      weight: 9
+      weight: 10
       format_type: fieldset
       format_settings:
         classes: ''
@@ -124,7 +138,23 @@ third_party_settings:
       label: 'Creators and Contributors'
       parent_name: ''
       region: content
-      weight: 7
+      weight: 8
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        description: ''
+    group_distributions:
+      children:
+        - field_data_service
+        - field_endpoint_url
+        - field_download_url
+      label: Distribution
+      parent_name: ''
+      region: content
+      weight: 20
       format_type: fieldset
       format_settings:
         classes: ''
@@ -174,7 +204,7 @@ content:
     weight: 16
     region: content
   field_data_service:
-    type: link
+    type: link_separate
     label: inline
     settings:
       trim_length: 80
@@ -183,7 +213,7 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 13
+    weight: 14
     region: content
   field_date_accepted:
     type: timestamp
@@ -299,6 +329,42 @@ content:
     third_party_settings: {  }
     weight: 5
     region: content
+  field_download_url:
+    type: link_separate
+    label: inline
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 16
+    region: content
+  field_edtf_date_accepted:
+    type: edtf_default
+    label: inline
+    settings:
+      date_separator: dash
+      date_order: big_endian
+      month_format: mm
+      day_format: dd
+      year_format: 'y'
+    third_party_settings: {  }
+    weight: 34
+    region: content
+  field_edtf_date_available:
+    type: edtf_default
+    label: inline
+    settings:
+      date_separator: dash
+      date_order: big_endian
+      month_format: mm
+      day_format: dd
+      year_format: 'y'
+    third_party_settings: {  }
+    weight: 35
+    region: content
   field_edtf_date_collected:
     type: edtf_default
     label: inline
@@ -335,6 +401,66 @@ content:
     third_party_settings: {  }
     weight: 21
     region: content
+  field_edtf_date_issued:
+    type: edtf_default
+    label: inline
+    settings:
+      date_separator: dash
+      date_order: big_endian
+      month_format: mm
+      day_format: dd
+      year_format: 'y'
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_edtf_date_submitted:
+    type: edtf_default
+    label: inline
+    settings:
+      date_separator: dash
+      date_order: big_endian
+      month_format: mm
+      day_format: dd
+      year_format: 'y'
+    third_party_settings: {  }
+    weight: 36
+    region: content
+  field_edtf_date_updated:
+    type: edtf_default
+    label: inline
+    settings:
+      date_separator: dash
+      date_order: big_endian
+      month_format: mm
+      day_format: dd
+      year_format: 'y'
+    third_party_settings: {  }
+    weight: 37
+    region: content
+  field_edtf_date_withdrawn:
+    type: edtf_default
+    label: inline
+    settings:
+      date_separator: dash
+      date_order: big_endian
+      month_format: mm
+      day_format: dd
+      year_format: 'y'
+    third_party_settings: {  }
+    weight: 38
+    region: content
+  field_endpoint_url:
+    type: link_separate
+    label: inline
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 15
+    region: content
   field_feature_specification:
     type: entity_reference_label
     label: inline
@@ -366,7 +492,7 @@ content:
       view_mode: default
       link: true
     third_party_settings: {  }
-    weight: 10
+    weight: 11
     region: content
   field_instrument:
     type: entity_reference_entity_view
@@ -375,7 +501,7 @@ content:
       view_mode: default
       link: true
     third_party_settings: {  }
-    weight: 11
+    weight: 12
     region: content
   field_language:
     type: entity_reference_label
@@ -383,7 +509,7 @@ content:
     settings:
       link: false
     third_party_settings: {  }
-    weight: 14
+    weight: 17
     region: content
   field_license:
     type: entity_reference_label
@@ -391,7 +517,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 12
+    weight: 19
     region: content
   field_member_of:
     type: entity_reference_label
@@ -426,12 +552,12 @@ content:
     region: content
   field_publication_year:
     type: number_integer
-    label: above
+    label: inline
     settings:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-    weight: 29
+    weight: 10
     region: content
   field_related_people:
     type: entity_reference_entity_view
@@ -449,7 +575,7 @@ content:
       view_mode: default
       link: false
     third_party_settings: {  }
-    weight: 15
+    weight: 18
     region: content
   field_resource_type:
     type: entity_reference_label
@@ -507,7 +633,7 @@ content:
   media_of_entity_view_1:
     settings: {  }
     third_party_settings: {  }
-    weight: 16
+    weight: 21
     region: content
 hidden:
   body: true

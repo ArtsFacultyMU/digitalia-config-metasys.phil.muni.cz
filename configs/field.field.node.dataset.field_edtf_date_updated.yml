@@ -1,0 +1,21 @@
+uuid: 552a8e61-331a-42aa-8b65-5359418ad385
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_edtf_date_updated
+    - node.type.dataset
+  module:
+    - controlled_access_terms
+id: node.dataset.field_edtf_date_updated
+field_name: field_edtf_date_updated
+entity_type: node
+bundle: dataset
+label: 'Date Updated'
+description: 'The date of the last update to the resource, when the resource is being added to. May be a range.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: edtf

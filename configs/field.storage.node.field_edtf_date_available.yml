@@ -1,18 +1,16 @@
-uuid: 86a89254-41fb-4508-ac8e-ebf23a85d615
+uuid: d9e5e0c2-f20a-4549-a9bd-fca2d33c2650
 langcode: en
 status: true
 dependencies:
   module:
     - controlled_access_terms
     - node
-_core:
-  default_config_hash: ritH1OPE0hTgDD73edW6V2e7JjZ5bT5LMbwHQHqWfWs
-id: node.field_edtf_date_issued
-field_name: field_edtf_date_issued
+id: node.field_edtf_date_available
+field_name: field_edtf_date_available
 entity_type: node
 type: edtf
 settings:
-  max_length: 128
+  max_length: 255
   case_sensitive: false
   is_ascii: false
 module: controlled_access_terms

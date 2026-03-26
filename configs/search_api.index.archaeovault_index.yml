@@ -21,6 +21,7 @@ dependencies:
     - field.storage.node.field_edtf_date_created
     - field.storage.node.field_feature_specification
     - field.storage.node.field_feature_type
+    - field.storage.node.field_frascati_subject_category
     - field.storage.node.field_language
     - field.storage.node.field_license
     - field.storage.node.field_methods
@@ -28,12 +29,14 @@ dependencies:
     - field.storage.node.field_object_specification
     - field.storage.node.field_object_type
     - field.storage.node.field_related_resource
+    - field.storage.node.field_resource_type
     - field.storage.node.field_series_information
     - field.storage.node.field_subtitle
     - field.storage.node.field_table_of_contents
     - field.storage.node.field_tags
     - field.storage.node.field_technical_info
     - field.storage.node.field_temporal_subject
+    - field.storage.taxonomy_term.field_authority_link
     - field.storage.taxonomy_term.field_external_uri
     - search_api.server.default_solr_server
   module:
@@ -83,7 +86,7 @@ third_party_settings:
       collection: ''
       timezone: ''
     multilingual:
-      limit_to_content_language: false
+      limit_to_content_language: true
       include_language_independent: true
       use_language_undefined_as_fallback_language: false
       specific_languages:
@@ -111,6 +114,28 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_alternative_title
+  field_authority_link:
+    label: 'Resource type » Taxonomy term » Authority sources'
+    datasource_id: 'entity:node'
+    property_path: 'field_resource_type:entity:field_authority_link'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_resource_type
+        - field.storage.taxonomy_term.field_authority_link
+      module:
+        - taxonomy
+  field_authority_link_1:
+    label: 'Frascati Subject Category » Taxonomy term » Authority sources'
+    datasource_id: 'entity:node'
+    property_path: 'field_frascati_subject_category:entity:field_authority_link'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_frascati_subject_category
+        - field.storage.taxonomy_term.field_authority_link
+      module:
+        - taxonomy
   field_data_service:
     label: 'Data Service'
     datasource_id: 'entity:node'
@@ -420,20 +445,9 @@ processor_settings:
   auto_aggregated_fulltext_field: {  }
   custom_value: {  }
   dgi_image_discovery: {  }
-  edtf_date_processor:
-    fields:
-      node|field_edtf_date_coverage: node|field_edtf_date_coverage
-      node|field_edtf_date_created: node|field_edtf_date_created
-    open_start_year: '0'
-    open_end_year: ''
-    spring_date: '3'
-    summer_date: '6'
-    autumn_date: '9'
-    winter_date: '12'
-    ignore_open_start: null
-    ignore_open_end: null
   edtf_year_only:
-    fields: {  }
+    fields:
+      node|dataset|field_edtf_date_created: node|dataset|field_edtf_date_created
     ignore_undated: 1
     ignore_open_start: 0
     open_start_year: '0'

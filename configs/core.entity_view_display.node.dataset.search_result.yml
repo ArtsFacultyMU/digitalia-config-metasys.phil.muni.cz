@@ -19,9 +19,17 @@ dependencies:
     - field.field.node.dataset.field_date_valid
     - field.field.node.dataset.field_date_withdrawn
     - field.field.node.dataset.field_doi
+    - field.field.node.dataset.field_download_url
+    - field.field.node.dataset.field_edtf_date_accepted
+    - field.field.node.dataset.field_edtf_date_available
     - field.field.node.dataset.field_edtf_date_collected
     - field.field.node.dataset.field_edtf_date_coverage
     - field.field.node.dataset.field_edtf_date_created
+    - field.field.node.dataset.field_edtf_date_issued
+    - field.field.node.dataset.field_edtf_date_submitted
+    - field.field.node.dataset.field_edtf_date_updated
+    - field.field.node.dataset.field_edtf_date_withdrawn
+    - field.field.node.dataset.field_endpoint_url
     - field.field.node.dataset.field_feature_specification
     - field.field.node.dataset.field_feature_type
     - field.field.node.dataset.field_frascati_subject_category
@@ -79,6 +87,18 @@ content:
     third_party_settings: {  }
     weight: 5
     region: content
+  field_edtf_date_issued:
+    type: edtf_default
+    label: inline
+    settings:
+      date_separator: dash
+      date_order: big_endian
+      month_format: mm
+      day_format: dd
+      year_format: 'y'
+    third_party_settings: {  }
+    weight: 4
+    region: content
   field_gemini_uri:
     settings: {  }
     third_party_settings: {  }
@@ -131,8 +151,15 @@ hidden:
   field_date_valid: true
   field_date_withdrawn: true
   field_doi: true
+  field_download_url: true
+  field_edtf_date_accepted: true
+  field_edtf_date_available: true
   field_edtf_date_collected: true
   field_edtf_date_coverage: true
+  field_edtf_date_submitted: true
+  field_edtf_date_updated: true
+  field_edtf_date_withdrawn: true
+  field_endpoint_url: true
   field_feature_specification: true
   field_feature_type: true
   field_frascati_subject_category: true

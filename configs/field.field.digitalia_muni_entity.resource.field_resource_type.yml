@@ -5,7 +5,7 @@ dependencies:
   config:
     - digitalia_muni_entity.digitalia_muni_entity_type.resource
     - field.storage.digitalia_muni_entity.field_resource_type
-    - taxonomy.vocabulary.resource_types_dcmi
+    - taxonomy.vocabulary.resource_types_coar
 id: digitalia_muni_entity.resource.field_resource_type
 field_name: field_resource_type
 entity_type: digitalia_muni_entity
@@ -20,10 +20,10 @@ settings:
   handler: 'default:filter_existing_terms'
   handler_settings:
     target_bundles:
-      resource_types_dcmi: resource_types_dcmi
+      resource_types_coar: resource_types_coar
     sort:
       field: name
       direction: asc
     auto_create: false
-    auto_create_bundle: ''
+    auto_create_bundle: resource_types_coar
 field_type: entity_reference

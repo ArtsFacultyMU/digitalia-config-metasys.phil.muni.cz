@@ -6,7 +6,7 @@ view_displays:
   'ccmm_oai_pmh:all_datasets': 'ccmm_oai_pmh:all_datasets'
 support_sets: 0
 mapping_source: rdf
-repository_name: ArchaeoVault
+repository_name: 'Metasys Digitalia MUNI ARTS'
 repository_email: digitalia@phil.muni.cz
 expiration: '3600'
 metadata_map_plugins:
@@ -14,15 +14,15 @@ metadata_map_plugins:
     label: ccmm-xml
     value: ccmm
   -
+    label: oai_dc
+    value: dublin_core_metatag
+  -
     label: mods
     value: ''
   -
     label: oai_raw
     value: ''
-  -
-    label: oai_dc
-    value: dublin_core_metatag
 cache_technique: liberal_cache
 mods_view:
-  view_machine_name: oai_pmh_item_data
-  view_display_name: page_1
+  view_machine_name: ''
+  view_display_name: ''

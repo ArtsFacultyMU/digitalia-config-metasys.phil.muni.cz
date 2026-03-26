@@ -1,14 +1,14 @@
-uuid: 8735c5dc-37a6-4f1e-93c2-580f28470431
+uuid: e9bef46d-df87-4ae0-b71d-d6e355a0936e
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_date_issued
+    - field.storage.node.field_edtf_date_issued
     - node.type.dataset
   module:
-    - datetime
-id: node.dataset.field_date_issued
-field_name: field_date_issued
+    - controlled_access_terms
+id: node.dataset.field_edtf_date_issued
+field_name: field_edtf_date_issued
 entity_type: node
 bundle: dataset
 label: 'Date Issued'
@@ -18,4 +18,4 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: datetime
+field_type: edtf

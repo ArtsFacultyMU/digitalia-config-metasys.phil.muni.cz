@@ -1,0 +1,21 @@
+uuid: 175f08eb-7e7e-4149-bbb7-96f5b5fca570
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_edtf_date_available
+    - node.type.dataset
+  module:
+    - controlled_access_terms
+id: node.dataset.field_edtf_date_available
+field_name: field_edtf_date_available
+entity_type: node
+bundle: dataset
+label: 'Date Available'
+description: 'The date the resource is made publicly available. May be a range. To indicate the end of an embargo period, use Available.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: edtf

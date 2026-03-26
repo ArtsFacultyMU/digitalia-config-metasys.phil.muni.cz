@@ -1,0 +1,21 @@
+uuid: 81b17516-e880-4578-bd19-b62fac1b44b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_edtf_date_submitted
+    - node.type.dataset
+  module:
+    - controlled_access_terms
+id: node.dataset.field_edtf_date_submitted
+field_name: field_edtf_date_submitted
+entity_type: node
+bundle: dataset
+label: 'Date Submitted'
+description: 'The date the creator submits the resource to the publisher. This could be different from Accepted if the publisher then applies a selection process. Recommended for discovery.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: edtf

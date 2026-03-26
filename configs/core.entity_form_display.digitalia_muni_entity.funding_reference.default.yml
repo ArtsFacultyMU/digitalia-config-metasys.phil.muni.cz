@@ -18,24 +18,29 @@ mode: default
 content:
   field_award_title:
     type: string_textfield
-    weight: 1
+    weight: 0
     region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
   field_funder:
-    type: inline_entity_form_simple
-    weight: 0
+    type: inline_entity_form_complex
+    weight: 3
     region: content
     settings:
       form_mode: default
-      override_labels: false
-      label_singular: ''
-      label_plural: ''
+      override_labels: true
+      label_singular: Funder
+      label_plural: Funders
+      allow_new: true
+      allow_existing: false
+      match_operator: CONTAINS
+      allow_duplicate: false
       collapsible: false
       collapsed: false
-      revision: false
+      revision: true
+      removed_reference: keep
     third_party_settings: {  }
   field_funding_program:
     type: link_default
@@ -47,7 +52,7 @@ content:
     third_party_settings: {  }
   field_local_identifier:
     type: string_textfield
-    weight: 3
+    weight: 1
     region: content
     settings:
       size: 60

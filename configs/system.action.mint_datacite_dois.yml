@@ -1,0 +1,15 @@
+uuid: 124041c5-cffa-41a3-8996-82ba039242f0
+langcode: en
+status: true
+dependencies:
+  module:
+    - doi_datacite
+id: mint_datacite_dois
+label: 'Mint DataCite DOIs'
+type: node
+plugin: doi_datacite_mint_doi
+configuration:
+  doi_datacite_creator: PLACEHOLDER
+  doi_datacite_publication_year: PLACEHOLDER
+  doi_datacite_publisher: PLACEHOLDER
+  doi_datacite_resource_type: Dataset
