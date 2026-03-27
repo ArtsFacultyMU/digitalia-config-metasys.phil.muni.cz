@@ -181,7 +181,8 @@
 		"Reenable qualifier field in configuration": "./patches/hdl.module.patch",
 		"Change handle format": "./patches/Hdl.patch",
 		"Fix interaction with ECA DOI": "./patches/MintDataCiteDoiAction.patch",
-		"Fix interaction with ECA Handle": "./patches/MintHdlAction.patch"
+		"Fix interaction with ECA Handle": "./patches/MintHdlAction.patch",
+		"Fix interaction with VBO": "./patches/MintDataCiteDoiAction_vbo.patch"
             },
             "drupal/openid_connect": {
 		"Use 'eduperson_entitlement' as source for group mappings": "./patches/OpenIDConnect.patch",
