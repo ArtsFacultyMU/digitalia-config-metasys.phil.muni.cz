@@ -1,9 +1,9 @@
 _core:
   default_config_hash: Yo9I-9cCMhnGRddog63IHfaD1MW-X7LIiPZnK8KLvEU
-doi_datacite_api_endpoint: 'https://api.test.datacite.org/dois'
-doi_datacite_prefix: '10.80626'
+doi_datacite_api_endpoint: 'https://api.datacite.org/dois'
+doi_datacite_prefix: '10.58063'
 doi_datacite_suffix_source: auto
-doi_datacite_username: UPWJ.PYRXWM
+doi_datacite_username: GCNC.GHGVVX
 doi_datacite_password: ''
 doi_datacite_creators_mapping: ''
 doi_datacite_publisher_mapping: ''

@@ -7,14 +7,17 @@ _core:
 id: node
 label: Content
 tags:
+  abstract: '[node:field_abstract]'
   canonical_url: '[node:url]'
-  dcterms_date: '[node:field_edtf_date_created]'
+  dcterms_date: '[node:field_publication_year]'
   dcterms_description: '[node:field_abstract]'
-  dcterms_identifier: '[node:field_doi]^[node:url:absolute]'
+  dcterms_identifier: '[node:field_doi]'
+  dcterms_language: '[node:field_language]'
   dcterms_publisher: 'Masaryk University'
   dcterms_relation: '[lindat:media_urls]'
   dcterms_rights: '[node:field_license:entity:name]'
-  dcterms_subject: 'Archaeology '
+  dcterms_subject: '[node:field_frascati_subject_category]'
   dcterms_title: '[node:title]'
+  dcterms_type: '[node:field_resource_type]'
   description: '[node:summary]'
   title: '[node:title] | [site:name]'

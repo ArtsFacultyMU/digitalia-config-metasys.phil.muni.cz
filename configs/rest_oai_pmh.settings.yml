@@ -7,7 +7,7 @@ view_displays:
 support_sets: 0
 mapping_source: rdf
 repository_name: 'Metasys Digitalia MUNI ARTS'
-repository_email: digitalia@phil.muni.cz
+repository_email: ff-digitalia-admins@group.muni.cz
 expiration: '3600'
 metadata_map_plugins:
   -
@@ -17,10 +17,10 @@ metadata_map_plugins:
     label: oai_dc
     value: dublin_core_metatag
   -
-    label: mods
+    label: oai_raw
     value: ''
   -
-    label: oai_raw
+    label: mods
     value: ''
 cache_technique: liberal_cache
 mods_view:
