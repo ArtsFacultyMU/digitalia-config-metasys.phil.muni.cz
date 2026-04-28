@@ -54,7 +54,6 @@ dependencies:
     - node.type.dataset
   module:
     - controlled_access_terms
-    - datetime
     - field_group
     - link
     - text
@@ -215,81 +214,6 @@ content:
     third_party_settings: {  }
     weight: 14
     region: content
-  field_date_accepted:
-    type: timestamp
-    label: inline
-    settings:
-      date_format: medium
-      custom_date_format: ''
-      timezone: ''
-      tooltip:
-        date_format: long
-        custom_date_format: ''
-      time_diff:
-        enabled: false
-        future_format: '@interval hence'
-        past_format: '@interval ago'
-        granularity: 2
-        refresh: 60
-    third_party_settings: {  }
-    weight: 23
-    region: content
-  field_date_available:
-    type: datetime_default
-    label: inline
-    settings:
-      timezone_override: ''
-      format_type: medium
-    third_party_settings: {  }
-    weight: 25
-    region: content
-  field_date_issued:
-    type: datetime_default
-    label: inline
-    settings:
-      timezone_override: ''
-      format_type: medium
-    third_party_settings: {  }
-    weight: 24
-    region: content
-  field_date_submitted:
-    type: timestamp
-    label: inline
-    settings:
-      date_format: medium
-      custom_date_format: ''
-      timezone: ''
-      tooltip:
-        date_format: long
-        custom_date_format: ''
-      time_diff:
-        enabled: false
-        future_format: '@interval hence'
-        past_format: '@interval ago'
-        granularity: 2
-        refresh: 60
-    third_party_settings: {  }
-    weight: 22
-    region: content
-  field_date_updated:
-    type: timestamp
-    label: inline
-    settings:
-      date_format: medium
-      custom_date_format: ''
-      timezone: ''
-      tooltip:
-        date_format: long
-        custom_date_format: ''
-      time_diff:
-        enabled: false
-        future_format: '@interval hence'
-        past_format: '@interval ago'
-        granularity: 2
-        refresh: 60
-    third_party_settings: {  }
-    weight: 26
-    region: content
   field_date_valid:
     type: edtf_default
     label: inline
@@ -301,25 +225,6 @@ content:
       year_format: 'y'
     third_party_settings: {  }
     weight: 27
-    region: content
-  field_date_withdrawn:
-    type: timestamp
-    label: inline
-    settings:
-      date_format: medium
-      custom_date_format: ''
-      timezone: ''
-      tooltip:
-        date_format: long
-        custom_date_format: ''
-      time_diff:
-        enabled: false
-        future_format: '@interval hence'
-        past_format: '@interval ago'
-        granularity: 2
-        refresh: 60
-    third_party_settings: {  }
-    weight: 28
     region: content
   field_doi:
     type: string
@@ -639,6 +544,12 @@ hidden:
   body: true
   did_image: true
   field_agent_relationship: true
+  field_date_accepted: true
+  field_date_available: true
+  field_date_issued: true
+  field_date_submitted: true
+  field_date_updated: true
+  field_date_withdrawn: true
   field_gemini_uri: true
   field_model: true
   islandora_fits_checksum: true

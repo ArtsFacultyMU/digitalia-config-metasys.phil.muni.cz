@@ -41,6 +41,7 @@ module:
   devel: 0
   devel_generate: 0
   dgi_image_discovery: 0
+  digitalia_muni_autocomplete_remote: 0
   digitalia_muni_dataset_ccmm: 0
   digitalia_muni_dataset_doi: 0
   digitalia_muni_entity: 0

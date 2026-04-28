@@ -14,6 +14,7 @@ dependencies:
     - field.field.digitalia_muni_entity.person.field_orcid
     - field.field.digitalia_muni_entity.person.field_ror
   module:
+    - digitalia_muni_autocomplete_remote
     - link
 id: digitalia_muni_entity.person.default
 targetEntityType: digitalia_muni_entity
@@ -69,20 +70,16 @@ content:
       placeholder_title: ''
     third_party_settings: {  }
   field_orcid:
-    type: string_textfield
+    type: orcid_widget
     weight: 2
     region: content
-    settings:
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_ror:
-    type: string_textfield
+    type: ror_widget
     weight: 4
     region: content
-    settings:
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
 hidden:
   field_affiliation: true

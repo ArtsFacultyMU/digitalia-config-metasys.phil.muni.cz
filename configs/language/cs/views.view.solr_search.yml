@@ -29,3 +29,10 @@ display:
   search_top:
     display_options:
       title: Vyhledávání
+  random_preview:
+    display_options:
+      footer:
+        area:
+          content:
+            value: '<a href=/search>Prohlížet celý katalog</a>'
+            format: restricted_html
