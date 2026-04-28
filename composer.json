@@ -66,7 +66,7 @@
         "drupal/field_group": "^3",
         "drupal/field_permissions": "^1",
         "drupal/field_report": "^2.1",
-        "drupal/field_validation": "^1.1",
+        "drupal/field_validation": "^3.0@beta",
         "drupal/file_delete": "^3.0",
         "drupal/flysystem": "^2.2@alpha",
         "drupal/fpa": "^4.0",
@@ -182,7 +182,8 @@
 		"Change handle format": "./patches/Hdl.patch",
 		"Fix interaction with ECA DOI": "./patches/MintDataCiteDoiAction.patch",
 		"Fix interaction with ECA Handle": "./patches/MintHdlAction.patch",
-		"Fix interaction with VBO": "./patches/MintDataCiteDoiAction_vbo.patch"
+		"Fix interaction with VBO": "./patches/MintDataCiteDoiAction_vbo.patch",
+		"Enable updating DOIs": "./patches/Dois.patch"
             },
             "drupal/openid_connect": {
 		"Use 'eduperson_entitlement' as source for group mappings": "./patches/OpenIDConnect.patch",
