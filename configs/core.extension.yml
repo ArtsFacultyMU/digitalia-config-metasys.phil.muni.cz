@@ -45,6 +45,7 @@ module:
   digitalia_muni_dataset_ccmm: 0
   digitalia_muni_dataset_doi: 0
   digitalia_muni_entity: 0
+  digitalia_muni_nfield_agent: 0
   digitalia_muni_token: 0
   digitalia_muni_workbench_ingest: 0
   doi_datacite: 0

@@ -9,6 +9,8 @@ dependencies:
     - field.field.node.dataset.field_agent_relationship
     - field.field.node.dataset.field_alternative_title
     - field.field.node.dataset.field_assessment_type
+    - field.field.node.dataset.field_contributor
+    - field.field.node.dataset.field_creator
     - field.field.node.dataset.field_creators_and_contributors
     - field.field.node.dataset.field_data_service
     - field.field.node.dataset.field_date_accepted
@@ -43,6 +45,7 @@ dependencies:
     - field.field.node.dataset.field_object_specification
     - field.field.node.dataset.field_object_type
     - field.field.node.dataset.field_publication_year
+    - field.field.node.dataset.field_publisher_dm
     - field.field.node.dataset.field_related_people
     - field.field.node.dataset.field_related_resource
     - field.field.node.dataset.field_resource_type
@@ -416,6 +419,8 @@ hidden:
   content_moderation_control: true
   did_image: true
   field_agent_relationship: true
+  field_contributor: true
+  field_creator: true
   field_creators_and_contributors: true
   field_download_url: true
   field_edtf_date_accepted: true
@@ -428,6 +433,7 @@ hidden:
   field_gemini_uri: true
   field_instrument: true
   field_publication_year: true
+  field_publisher_dm: true
   field_related_people: true
   islandora_fits_checksum: true
   langcode: true

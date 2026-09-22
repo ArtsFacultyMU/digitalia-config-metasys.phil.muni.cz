@@ -1,0 +1,22 @@
+uuid: 9a693e47-ccf0-4c9c-8e97-526975784ec6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contributor
+    - node.type.dataset
+  module:
+    - digitalia_muni_nfield_agent
+id: node.dataset.field_contributor
+field_name: field_contributor
+entity_type: node
+bundle: dataset
+label: Contributor
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  role: Contributor
+field_type: dm_field_agent

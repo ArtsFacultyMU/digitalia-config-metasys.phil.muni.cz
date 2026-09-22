@@ -8,6 +8,8 @@ dependencies:
     - field.field.node.dataset.field_agent_relationship
     - field.field.node.dataset.field_alternative_title
     - field.field.node.dataset.field_assessment_type
+    - field.field.node.dataset.field_contributor
+    - field.field.node.dataset.field_creator
     - field.field.node.dataset.field_creators_and_contributors
     - field.field.node.dataset.field_data_service
     - field.field.node.dataset.field_date_accepted
@@ -42,6 +44,7 @@ dependencies:
     - field.field.node.dataset.field_object_specification
     - field.field.node.dataset.field_object_type
     - field.field.node.dataset.field_publication_year
+    - field.field.node.dataset.field_publisher_dm
     - field.field.node.dataset.field_related_people
     - field.field.node.dataset.field_related_resource
     - field.field.node.dataset.field_resource_type
@@ -56,6 +59,7 @@ dependencies:
   module:
     - content_moderation
     - controlled_access_terms
+    - digitalia_muni_nfield_agent
     - field_group
     - ief_table_view_mode
     - link
@@ -141,6 +145,9 @@ third_party_settings:
       children:
         - field_related_people
         - field_creators_and_contributors
+        - field_creator
+        - field_contributor
+        - field_publisher_dm
       label: 'Creators and Contributors'
       region: content
       parent_name: ''
@@ -195,6 +202,18 @@ content:
   field_assessment_type:
     type: options_select
     weight: 16
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_contributor:
+    type: dm_field_agent
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_creator:
+    type: dm_field_agent
+    weight: 9
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -430,6 +449,12 @@ content:
     region: content
     settings:
       placeholder: ''
+    third_party_settings: {  }
+  field_publisher_dm:
+    type: dm_field_agent
+    weight: 11
+    region: content
+    settings: {  }
     third_party_settings: {  }
   field_related_people:
     type: inline_entity_form_complex_table_view_mode

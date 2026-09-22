@@ -23,6 +23,7 @@ dependencies:
     - content_moderation
     - content_translation
     - digitalia_muni_entity
+    - field_permissions
     - group
     - islandora
     - masquerade
@@ -51,6 +52,7 @@ permissions:
   - 'create dataset content'
   - 'create digitalia_muni_entity'
   - 'create document media'
+  - 'create field_publisher_dm'
   - 'create file media'
   - 'create image media'
   - 'create media'
@@ -66,12 +68,14 @@ permissions:
   - 'edit any dataset content'
   - 'edit any page content'
   - 'edit digitalia_muni_entity'
+  - 'edit field_publisher_dm'
   - 'edit own 3d_model media'
   - 'edit own audio media'
   - 'edit own csv media'
   - 'edit own dataset content'
   - 'edit own document media'
   - 'edit own extracted_text media'
+  - 'edit own field_publisher_dm'
   - 'edit own file media'
   - 'edit own image media'
   - 'edit own page content'
