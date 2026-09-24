@@ -54,6 +54,9 @@ display:
                 title: Aktivní
               2:
                 title: Zablokován
+        roles_target_id:
+          expose:
+            label: Role
         permission:
           expose:
             label: Oprávnění

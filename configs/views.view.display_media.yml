@@ -1,6 +1,6 @@
 uuid: 9aac45a9-5f0b-4fc0-850d-a82041758de5
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - core.entity_view_mode.media.file_download

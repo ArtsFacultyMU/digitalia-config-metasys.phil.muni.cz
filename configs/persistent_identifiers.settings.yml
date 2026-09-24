@@ -4,7 +4,7 @@ persistent_identifiers_target_field: field_doi
 persistent_identifiers_persister: persistent_identifiers.persister.generic
 persistent_identifiers_minter: doi_datacite.minter.datacitedois
 persistent_identifiers_bundles:
-  - 0
+  - dataset
   - 0
   - 0
   - 0

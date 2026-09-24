@@ -160,7 +160,7 @@ third_party_settings:
       label: Distribution
       parent_name: ''
       region: content
-      weight: 20
+      weight: 16
       format_type: fieldset
       format_settings:
         classes: ''
@@ -445,7 +445,7 @@ content:
     settings:
       link: false
     third_party_settings: {  }
-    weight: 17
+    weight: 13
     region: content
   field_license:
     type: entity_reference_label
@@ -453,7 +453,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 19
+    weight: 15
     region: content
   field_member_of:
     type: entity_reference_label
@@ -523,7 +523,7 @@ content:
       view_mode: default
       link: false
     third_party_settings: {  }
-    weight: 18
+    weight: 14
     region: content
   field_resource_type:
     type: entity_reference_label
@@ -581,11 +581,16 @@ content:
   media_of_entity_view_1:
     settings: {  }
     third_party_settings: {  }
-    weight: 21
+    weight: 17
     region: content
 hidden:
   body: true
   did_image: true
+  display_media_entity_view_1: true
+  display_media_entity_view_3: true
+  display_media_original_download: true
+  display_media_service_file: true
+  display_media_thumbnail: true
   field_agent_relationship: true
   field_date_accepted: true
   field_date_available: true

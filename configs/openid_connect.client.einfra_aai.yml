@@ -20,3 +20,4 @@ settings:
     - openid
     - email
     - eduperson_entitlement
+  provider_slug: ''

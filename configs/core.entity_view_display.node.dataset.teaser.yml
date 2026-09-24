@@ -92,6 +92,11 @@ hidden:
   body: true
   content_moderation_control: true
   did_image: true
+  display_media_entity_view_1: true
+  display_media_entity_view_3: true
+  display_media_original_download: true
+  display_media_service_file: true
+  display_media_thumbnail: true
   field_agent_relationship: true
   field_alternative_title: true
   field_assessment_type: true
