@@ -12,7 +12,7 @@ dependencies:
 id: islandora_muni_resourcetype
 theme: islandora_muni
 region: header
-weight: -21
+weight: -24
 provider: null
 plugin: 'facet_block:resource_type'
 settings:

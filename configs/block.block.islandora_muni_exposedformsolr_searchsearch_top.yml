@@ -11,7 +11,7 @@ dependencies:
 id: islandora_muni_exposedformsolr_searchsearch_top
 theme: islandora_muni
 region: header
-weight: -3
+weight: -6
 provider: null
 plugin: 'views_exposed_filter_block:solr_search-search_top'
 settings:

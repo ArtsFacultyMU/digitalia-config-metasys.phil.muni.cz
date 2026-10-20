@@ -12,7 +12,7 @@ dependencies:
 id: islandora_muni_publisherswc
 theme: islandora_muni
 region: header
-weight: -15
+weight: -18
 provider: null
 plugin: 'facet_block:publisher_swc'
 settings:

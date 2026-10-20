@@ -29,10 +29,10 @@
             "type": "package",
             "package": {
                 "name": "noli42/chosen",
-                "version": "3.0.0",
+                "version": "3.1.4",
                 "type": "drupal-library",
                 "dist": {
-                    "url": "https://github.com/noli42/chosen/releases/download/3.0.0/chosen-assets-v3.0.0.zip",
+                    "url": "https://github.com/noli42/chosen/releases/download/3.1.4/chosen-assets-v3.1.4.zip",
                     "type": "zip"
                 }
             }
@@ -80,6 +80,7 @@
         "drupal/inline_entity_form": "^3.0@RC",
         "drupal/islandora": "^2.8.1",
         "drupal/islandora_mirador": "^3",
+        "drupal/lang_dropdown": "^2.4",
         "drupal/leaflet": "^10.3",
         "drupal/masquerade": "^2.0",
         "drupal/metatag": "^2.2",
@@ -110,7 +111,7 @@
         "islandora/views_nested_details": "^1.0",
         "library/pdf.js": "^2.4",
         "mjordan/islandora_workbench_integration": "dev-main",
-        "noli42/chosen": "3.0.0"
+        "noli42/chosen": "3.1.4"
     },
     "conflict": {
         "drupal/drupal": "*",

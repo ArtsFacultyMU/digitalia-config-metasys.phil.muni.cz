@@ -12,7 +12,7 @@ dependencies:
 id: islandora_muni_physicalformswc
 theme: islandora_muni
 region: header
-weight: -13
+weight: -16
 provider: null
 plugin: 'facet_block:physical_form_swc'
 settings:

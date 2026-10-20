@@ -14,7 +14,7 @@ _core:
 id: islandora_muni_subjectname
 theme: islandora_muni
 region: header
-weight: -9
+weight: -12
 provider: null
 plugin: 'facet_block:subject_name'
 settings:

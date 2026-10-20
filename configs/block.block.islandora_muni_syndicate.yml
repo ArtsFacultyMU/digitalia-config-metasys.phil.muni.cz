@@ -11,7 +11,7 @@ _core:
 id: islandora_muni_syndicate
 theme: islandora_muni
 region: header
-weight: 2
+weight: 0
 provider: null
 plugin: node_syndicate_block
 settings:

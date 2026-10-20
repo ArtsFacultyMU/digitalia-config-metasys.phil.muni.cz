@@ -394,7 +394,7 @@ text_files:
     pro
     je
     na
-  protwords: |
+  protwords: |+
 
   accents: |
     # À => A

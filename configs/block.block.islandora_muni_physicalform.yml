@@ -14,7 +14,7 @@ _core:
 id: islandora_muni_physicalform
 theme: islandora_muni
 region: header
-weight: -14
+weight: -17
 provider: null
 plugin: 'facet_block:physical_form'
 settings:

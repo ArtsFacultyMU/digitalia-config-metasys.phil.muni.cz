@@ -12,7 +12,7 @@ dependencies:
 id: islandora_muni_subjecttemporalswc
 theme: islandora_muni
 region: header
-weight: -6
+weight: -9
 provider: null
 plugin: 'facet_block:subject_temporal_swc'
 settings:
