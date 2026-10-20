@@ -1,0 +1,22 @@
+uuid: a4045462-67b4-4e42-a333-c0d16552a6f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description_of_personal_da
+    - node.type.dataset
+  module:
+    - text
+id: node.dataset.field_description_of_personal_da
+field_name: field_description_of_personal_da
+entity_type: node
+bundle: dataset
+label: 'Description of Personal Data Within the Dataset'
+description: 'What personal data does the dataset contain. E.g. names, dates of birth, photographs, identifiers.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

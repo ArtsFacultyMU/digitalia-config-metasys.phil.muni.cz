@@ -14,7 +14,7 @@ id: node.dataset.field_table_of_contents
 field_name: field_table_of_contents
 entity_type: node
 bundle: dataset
-label: 'Table of Contents'
+label: 'Dataset Contents and Structure'
 description: 'A listing of the Table of Contents.'
 required: false
 translatable: true

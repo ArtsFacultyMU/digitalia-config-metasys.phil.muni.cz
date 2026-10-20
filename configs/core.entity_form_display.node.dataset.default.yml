@@ -7,11 +7,14 @@ dependencies:
     - field.field.node.dataset.field_abstract
     - field.field.node.dataset.field_agent_relationship
     - field.field.node.dataset.field_alternative_title
+    - field.field.node.dataset.field_appropriate_reuse
     - field.field.node.dataset.field_assessment_type
     - field.field.node.dataset.field_contributor
     - field.field.node.dataset.field_creator
     - field.field.node.dataset.field_creators_and_contributors
     - field.field.node.dataset.field_data_service
+    - field.field.node.dataset.field_data_type
+    - field.field.node.dataset.field_data_type_description
     - field.field.node.dataset.field_date_accepted
     - field.field.node.dataset.field_date_available
     - field.field.node.dataset.field_date_issued
@@ -19,6 +22,7 @@ dependencies:
     - field.field.node.dataset.field_date_updated
     - field.field.node.dataset.field_date_valid
     - field.field.node.dataset.field_date_withdrawn
+    - field.field.node.dataset.field_description_of_personal_da
     - field.field.node.dataset.field_doi
     - field.field.node.dataset.field_download_url
     - field.field.node.dataset.field_edtf_date_accepted
@@ -35,6 +39,7 @@ dependencies:
     - field.field.node.dataset.field_feature_type
     - field.field.node.dataset.field_frascati_subject_category
     - field.field.node.dataset.field_funding_reference
+    - field.field.node.dataset.field_inappropriate_reuse
     - field.field.node.dataset.field_instrument
     - field.field.node.dataset.field_language
     - field.field.node.dataset.field_license
@@ -43,10 +48,15 @@ dependencies:
     - field.field.node.dataset.field_model
     - field.field.node.dataset.field_object_specification
     - field.field.node.dataset.field_object_type
+    - field.field.node.dataset.field_personal_data
+    - field.field.node.dataset.field_personal_data_legal_basis
+    - field.field.node.dataset.field_personal_data_risk_mitigat
+    - field.field.node.dataset.field_personal_data_risks
     - field.field.node.dataset.field_publication_year
     - field.field.node.dataset.field_publisher_dm
     - field.field.node.dataset.field_related_people
     - field.field.node.dataset.field_related_resource
+    - field.field.node.dataset.field_research_questions
     - field.field.node.dataset.field_resource_type
     - field.field.node.dataset.field_series_information
     - field.field.node.dataset.field_subtitle
@@ -73,6 +83,7 @@ third_party_settings:
         - field_series_information
         - field_table_of_contents
         - field_technical_info
+        - field_research_questions
       label: Description
       region: content
       parent_name: ''
@@ -143,8 +154,6 @@ third_party_settings:
         required_fields: true
     group_creators_and_contributors:
       children:
-        - field_related_people
-        - field_creators_and_contributors
         - field_creator
         - field_contributor
         - field_publisher_dm
@@ -169,13 +178,69 @@ third_party_settings:
       label: Distribution
       region: content
       parent_name: ''
-      weight: 20
+      weight: 17
       format_type: fieldset
       format_settings:
         classes: ''
         show_empty_fields: false
         id: ''
         label_as_html: false
+        description: ''
+        required_fields: true
+    group_legal_minimum:
+      children:
+        - field_license
+        - field_personal_data
+        - field_description_of_personal_da
+        - field_personal_data_legal_basis
+        - field_personal_data_risks
+        - field_personal_data_risk_mitigat
+      label: 'Legal minimum'
+      region: content
+      parent_name: ''
+      weight: 23
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        open: false
+        description: ''
+        required_fields: true
+    group_reuse:
+      children:
+        - field_appropriate_reuse
+        - field_inappropriate_reuse
+      label: Reuse
+      region: content
+      parent_name: ''
+      weight: 7
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        open: false
+        description: ''
+        required_fields: true
+    group_data:
+      children:
+        - field_resource_type
+        - field_data_type
+        - field_data_type_description
+      label: Data
+      region: content
+      parent_name: ''
+      weight: 6
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        open: false
         description: ''
         required_fields: true
 id: node.dataset.default
@@ -199,6 +264,14 @@ content:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
+  field_appropriate_reuse:
+    type: text_textarea
+    weight: 18
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
   field_assessment_type:
     type: options_select
     weight: 16
@@ -217,24 +290,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_creators_and_contributors:
-    type: inline_entity_form_complex_table_view_mode
-    weight: 8
-    region: content
-    settings:
-      form_mode: default
-      override_labels: true
-      label_singular: Organisation
-      label_plural: Organisations
-      allow_new: true
-      allow_existing: false
-      match_operator: CONTAINS
-      allow_duplicate: false
-      collapsible: false
-      collapsed: false
-      revision: true
-      removed_reference: keep
-    third_party_settings: {  }
   field_data_service:
     type: link_default
     weight: 10
@@ -242,6 +297,24 @@ content:
     settings:
       placeholder_url: ''
       placeholder_title: ''
+    third_party_settings: {  }
+  field_data_type:
+    type: entity_reference_autocomplete
+    weight: 21
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_data_type_description:
+    type: text_textarea
+    weight: 22
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
     third_party_settings: {  }
   field_date_valid:
     type: edtf_default
@@ -252,9 +325,17 @@ content:
       intervals: true
       sets: false
     third_party_settings: {  }
+  field_description_of_personal_da:
+    type: text_textarea
+    weight: 24
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
   field_doi:
     type: string_textfield
-    weight: 19
+    weight: 16
     region: content
     settings:
       size: 60
@@ -377,7 +458,7 @@ content:
     third_party_settings: {  }
   field_funding_reference:
     type: inline_entity_form_complex_table_view_mode
-    weight: 14
+    weight: 11
     region: content
     settings:
       form_mode: default
@@ -392,6 +473,14 @@ content:
       collapsed: false
       revision: true
       removed_reference: keep
+    third_party_settings: {  }
+  field_inappropriate_reuse:
+    type: text_textarea
+    weight: 19
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
     third_party_settings: {  }
   field_instrument:
     type: inline_entity_form_complex_table_view_mode
@@ -413,13 +502,13 @@ content:
     third_party_settings: {  }
   field_language:
     type: options_select
-    weight: 18
+    weight: 15
     region: content
     settings: {  }
     third_party_settings: {  }
   field_license:
     type: options_select
-    weight: 16
+    weight: 13
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -443,6 +532,37 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_personal_data:
+    type: boolean_checkbox
+    weight: 23
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_personal_data_legal_basis:
+    type: text_textarea
+    weight: 25
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_personal_data_risk_mitigat:
+    type: text_textarea
+    weight: 27
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_personal_data_risks:
+    type: text_textarea
+    weight: 26
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
   field_publication_year:
     type: number
     weight: 28
@@ -456,27 +576,9 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_related_people:
-    type: inline_entity_form_complex_table_view_mode
-    weight: 7
-    region: content
-    settings:
-      form_mode: default
-      override_labels: true
-      label_singular: Person
-      label_plural: People
-      allow_new: true
-      allow_existing: false
-      match_operator: CONTAINS
-      allow_duplicate: false
-      collapsible: false
-      collapsed: false
-      revision: true
-      removed_reference: keep
-    third_party_settings: {  }
   field_related_resource:
     type: inline_entity_form_complex_table_view_mode
-    weight: 13
+    weight: 10
     region: content
     settings:
       form_mode: default
@@ -491,6 +593,14 @@ content:
       collapsed: false
       revision: true
       removed_reference: keep
+    third_party_settings: {  }
+  field_research_questions:
+    type: text_textarea
+    weight: 20
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
     third_party_settings: {  }
   field_resource_type:
     type: options_select
@@ -548,7 +658,7 @@ content:
     third_party_settings: {  }
   langcode:
     type: language_select
-    weight: 17
+    weight: 14
     region: content
     settings:
       include_locked: true
@@ -568,7 +678,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
   translation:
-    weight: 15
+    weight: 12
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -576,6 +686,7 @@ hidden:
   body: true
   created: true
   field_agent_relationship: true
+  field_creators_and_contributors: true
   field_date_accepted: true
   field_date_available: true
   field_date_issued: true
@@ -584,6 +695,7 @@ hidden:
   field_date_withdrawn: true
   field_member_of: true
   field_model: true
+  field_related_people: true
   path: true
   promote: true
   status: true

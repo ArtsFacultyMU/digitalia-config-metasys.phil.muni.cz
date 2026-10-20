@@ -1,0 +1,29 @@
+uuid: f374e439-6988-46d1-8db9-b1d239371aad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_data_type
+    - node.type.dataset
+    - taxonomy.vocabulary.data_type
+id: node.dataset.field_data_type
+field_name: field_data_type
+entity_type: node
+bundle: dataset
+label: 'Data Type'
+description: 'Select all relevent terms to describe the data type or add new ones. Data type refers to, for example, numerical, textual, visual, spatial, or 3D data. A record is the entity about which information is collected in a dataset—for instance, a person, document, organization, event, measurement, or artifact.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:filter_existing_terms'
+  handler_settings:
+    target_bundles:
+      data_type: data_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

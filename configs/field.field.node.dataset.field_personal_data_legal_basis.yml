@@ -1,0 +1,22 @@
+uuid: 70bb7e47-dae5-4cfa-abee-91ffe32565be
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_personal_data_legal_basis
+    - node.type.dataset
+  module:
+    - text
+id: node.dataset.field_personal_data_legal_basis
+field_name: field_personal_data_legal_basis
+entity_type: node
+bundle: dataset
+label: 'Personal Data Legal Basis'
+description: 'On what basis are you permitted to use this data? E.g., consent of the individuals, legal obligation, legitimate interest.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

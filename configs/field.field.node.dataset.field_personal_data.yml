@@ -1,0 +1,23 @@
+uuid: ad59674b-9863-4c93-b37d-faadb778e238
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_personal_data
+    - node.type.dataset
+id: node.dataset.field_personal_data
+field_name: field_personal_data
+entity_type: node
+bundle: dataset
+label: 'Does the dataset contain personal data?'
+description: 'E.g. names, dates of birth, photographs, personal identifiers.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

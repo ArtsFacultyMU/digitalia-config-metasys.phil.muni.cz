@@ -1,0 +1,22 @@
+uuid: 00799bdb-65b9-4ff4-aaaa-a7d63f011fac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_research_questions
+    - node.type.dataset
+  module:
+    - text
+id: node.dataset.field_research_questions
+field_name: field_research_questions
+entity_type: node
+bundle: dataset
+label: 'Research Questions'
+description: 'Research questions the dataset was created to answer.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

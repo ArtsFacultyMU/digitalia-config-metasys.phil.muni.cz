@@ -1,0 +1,22 @@
+uuid: 320d72dd-2e50-4960-9a54-d2704ca49cba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_inappropriate_reuse
+    - node.type.dataset
+  module:
+    - text
+id: node.dataset.field_inappropriate_reuse
+field_name: field_inappropriate_reuse
+entity_type: node
+bundle: dataset
+label: 'Dataset limitations and inappropriate reuse'
+description: 'For what purposes is the dataset unsuitable? Describe its limitations—for example, due to incompleteness, bias, limited scope, or the methodology used to collect the data.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

@@ -14,8 +14,8 @@ id: node.dataset.field_abstract
 field_name: field_abstract
 entity_type: node
 bundle: dataset
-label: Abstract
-description: 'A brief description of the resource and the context in which the resource was created.'
+label: 'Purpose and Context of Dataset Creation'
+description: 'Why was the dataset created (what was its original purpose and context)? E.g., research, project, record-keeping, documentation.'
 required: true
 translatable: true
 default_value: {  }

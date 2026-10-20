@@ -7,5 +7,5 @@ dependencies:
 id: front_page_jumbotron
 title: 'Front page jumbotron'
 content:
-  value: "<p><span>Digitalia Platforms</span><br><span>We've heard you like platforms...</span></p>"
+  value: '<p><span>Digitalia MUNI ARTS Catalogue</span><br><span>Datasets and platforms managed by the Digitalia MUNI ARTS research infrastructure</span></p>'
   format: full_html

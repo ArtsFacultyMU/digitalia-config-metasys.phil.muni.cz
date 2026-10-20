@@ -1,0 +1,22 @@
+uuid: d7bca565-84dc-4e88-ab17-1057fa23b565
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_personal_data_risks
+    - node.type.dataset
+  module:
+    - text
+id: node.dataset.field_personal_data_risks
+field_name: field_personal_data_risks
+entity_type: node
+bundle: dataset
+label: 'Personal Data Risks'
+description: 'What risks might the dataset pose to the individuals included in the data? E.g., identification of an individual, misuse of data, infringement of privacy.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

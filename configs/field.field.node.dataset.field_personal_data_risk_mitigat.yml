@@ -1,0 +1,22 @@
+uuid: 760a668a-2483-46f4-a64f-fdabff79108e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_personal_data_risk_mitigat
+    - node.type.dataset
+  module:
+    - text
+id: node.dataset.field_personal_data_risk_mitigat
+field_name: field_personal_data_risk_mitigat
+entity_type: node
+bundle: dataset
+label: 'Personal Data Risk Mitigation'
+description: 'How do you mitigate these risks? E.g., anonymization, access restriction, pseudonymization.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

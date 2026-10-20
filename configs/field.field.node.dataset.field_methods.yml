@@ -15,7 +15,7 @@ field_name: field_methods
 entity_type: node
 bundle: dataset
 label: Methods
-description: 'The methodology employed for the study or research.'
+description: 'How was the data obtained (method and source)? E.g., methodology, measurements (including instrument specifications), research, retrieval from a database.'
 required: true
 translatable: true
 default_value: {  }

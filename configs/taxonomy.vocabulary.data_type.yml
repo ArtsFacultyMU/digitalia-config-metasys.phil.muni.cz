@@ -1,0 +1,9 @@
+uuid: 3b19bae0-ea47-4209-b0ca-7fbbde6dbd2d
+langcode: en
+status: true
+dependencies: {  }
+name: 'Data Type'
+vid: data_type
+description: 'A folksonomy for describing the type of data. Data type refers to, for example, numerical, textual, visual, spatial, or 3D data.'
+weight: 0
+new_revision: false

@@ -1,0 +1,22 @@
+uuid: d219dd29-b193-45af-8474-9d524d1db5c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_data_type_description
+    - node.type.dataset
+  module:
+    - text
+id: node.dataset.field_data_type_description
+field_name: field_data_type_description
+entity_type: node
+bundle: dataset
+label: 'Description of Data and Record Types '
+description: 'What type of data does the dataset contain, and what does a single record represent? Data type refers to, for example, numerical, textual, visual, spatial, or 3D data. A record is the entity about which information is collected in a dataset—for instance, a person, document, organization, event, measurement, or artifact.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

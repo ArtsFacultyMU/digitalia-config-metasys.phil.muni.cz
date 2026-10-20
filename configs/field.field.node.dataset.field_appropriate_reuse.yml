@@ -1,0 +1,22 @@
+uuid: 48104a8e-3c1e-4544-9800-41551e3e2bc7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_appropriate_reuse
+    - node.type.dataset
+  module:
+    - text
+id: node.dataset.field_appropriate_reuse
+field_name: field_appropriate_reuse
+entity_type: node
+bundle: dataset
+label: 'Appropriate Reuse'
+description: 'What can the dataset be used for (typical use cases)? E.g., analysis, modeling, documentation, teaching.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

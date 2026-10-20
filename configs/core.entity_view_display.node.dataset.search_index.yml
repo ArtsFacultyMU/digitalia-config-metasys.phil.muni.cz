@@ -8,11 +8,14 @@ dependencies:
     - field.field.node.dataset.field_abstract
     - field.field.node.dataset.field_agent_relationship
     - field.field.node.dataset.field_alternative_title
+    - field.field.node.dataset.field_appropriate_reuse
     - field.field.node.dataset.field_assessment_type
     - field.field.node.dataset.field_contributor
     - field.field.node.dataset.field_creator
     - field.field.node.dataset.field_creators_and_contributors
     - field.field.node.dataset.field_data_service
+    - field.field.node.dataset.field_data_type
+    - field.field.node.dataset.field_data_type_description
     - field.field.node.dataset.field_date_accepted
     - field.field.node.dataset.field_date_available
     - field.field.node.dataset.field_date_issued
@@ -20,6 +23,7 @@ dependencies:
     - field.field.node.dataset.field_date_updated
     - field.field.node.dataset.field_date_valid
     - field.field.node.dataset.field_date_withdrawn
+    - field.field.node.dataset.field_description_of_personal_da
     - field.field.node.dataset.field_doi
     - field.field.node.dataset.field_download_url
     - field.field.node.dataset.field_edtf_date_accepted
@@ -36,6 +40,7 @@ dependencies:
     - field.field.node.dataset.field_feature_type
     - field.field.node.dataset.field_frascati_subject_category
     - field.field.node.dataset.field_funding_reference
+    - field.field.node.dataset.field_inappropriate_reuse
     - field.field.node.dataset.field_instrument
     - field.field.node.dataset.field_language
     - field.field.node.dataset.field_license
@@ -44,10 +49,15 @@ dependencies:
     - field.field.node.dataset.field_model
     - field.field.node.dataset.field_object_specification
     - field.field.node.dataset.field_object_type
+    - field.field.node.dataset.field_personal_data
+    - field.field.node.dataset.field_personal_data_legal_basis
+    - field.field.node.dataset.field_personal_data_risk_mitigat
+    - field.field.node.dataset.field_personal_data_risks
     - field.field.node.dataset.field_publication_year
     - field.field.node.dataset.field_publisher_dm
     - field.field.node.dataset.field_related_people
     - field.field.node.dataset.field_related_resource
+    - field.field.node.dataset.field_research_questions
     - field.field.node.dataset.field_resource_type
     - field.field.node.dataset.field_series_information
     - field.field.node.dataset.field_subtitle
@@ -73,6 +83,31 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 7
+    region: content
+  display_media_entity_view_1:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  display_media_entity_view_3:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  display_media_original_download:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  display_media_service_file:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  display_media_thumbnail:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
     region: content
   field_abstract:
     type: text_default
@@ -419,9 +454,13 @@ hidden:
   content_moderation_control: true
   did_image: true
   field_agent_relationship: true
+  field_appropriate_reuse: true
   field_contributor: true
   field_creator: true
   field_creators_and_contributors: true
+  field_data_type: true
+  field_data_type_description: true
+  field_description_of_personal_da: true
   field_download_url: true
   field_edtf_date_accepted: true
   field_edtf_date_available: true
@@ -431,10 +470,16 @@ hidden:
   field_endpoint_url: true
   field_funding_reference: true
   field_gemini_uri: true
+  field_inappropriate_reuse: true
   field_instrument: true
+  field_personal_data: true
+  field_personal_data_legal_basis: true
+  field_personal_data_risk_mitigat: true
+  field_personal_data_risks: true
   field_publication_year: true
   field_publisher_dm: true
   field_related_people: true
+  field_research_questions: true
   islandora_fits_checksum: true
   langcode: true
   links: true

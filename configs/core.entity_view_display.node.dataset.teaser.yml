@@ -8,11 +8,14 @@ dependencies:
     - field.field.node.dataset.field_abstract
     - field.field.node.dataset.field_agent_relationship
     - field.field.node.dataset.field_alternative_title
+    - field.field.node.dataset.field_appropriate_reuse
     - field.field.node.dataset.field_assessment_type
     - field.field.node.dataset.field_contributor
     - field.field.node.dataset.field_creator
     - field.field.node.dataset.field_creators_and_contributors
     - field.field.node.dataset.field_data_service
+    - field.field.node.dataset.field_data_type
+    - field.field.node.dataset.field_data_type_description
     - field.field.node.dataset.field_date_accepted
     - field.field.node.dataset.field_date_available
     - field.field.node.dataset.field_date_issued
@@ -20,6 +23,7 @@ dependencies:
     - field.field.node.dataset.field_date_updated
     - field.field.node.dataset.field_date_valid
     - field.field.node.dataset.field_date_withdrawn
+    - field.field.node.dataset.field_description_of_personal_da
     - field.field.node.dataset.field_doi
     - field.field.node.dataset.field_download_url
     - field.field.node.dataset.field_edtf_date_accepted
@@ -36,6 +40,7 @@ dependencies:
     - field.field.node.dataset.field_feature_type
     - field.field.node.dataset.field_frascati_subject_category
     - field.field.node.dataset.field_funding_reference
+    - field.field.node.dataset.field_inappropriate_reuse
     - field.field.node.dataset.field_instrument
     - field.field.node.dataset.field_language
     - field.field.node.dataset.field_license
@@ -44,10 +49,15 @@ dependencies:
     - field.field.node.dataset.field_model
     - field.field.node.dataset.field_object_specification
     - field.field.node.dataset.field_object_type
+    - field.field.node.dataset.field_personal_data
+    - field.field.node.dataset.field_personal_data_legal_basis
+    - field.field.node.dataset.field_personal_data_risk_mitigat
+    - field.field.node.dataset.field_personal_data_risks
     - field.field.node.dataset.field_publication_year
     - field.field.node.dataset.field_publisher_dm
     - field.field.node.dataset.field_related_people
     - field.field.node.dataset.field_related_resource
+    - field.field.node.dataset.field_research_questions
     - field.field.node.dataset.field_resource_type
     - field.field.node.dataset.field_series_information
     - field.field.node.dataset.field_subtitle
@@ -57,6 +67,7 @@ dependencies:
     - field.field.node.dataset.field_temporal_subject
     - node.type.dataset
   module:
+    - digitalia_muni_nfield_agent
     - text
     - user
 id: node.dataset.teaser
@@ -69,6 +80,18 @@ content:
     label: visually_hidden
     settings:
       trim_length: 250
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_creator:
+    type: dm_field_agent_brief
+    label: hidden
+    settings:
+      name_format: simple_name
+      affiliation: 0
+      contact: 0
+      link: 0
+      note: 0
     third_party_settings: {  }
     weight: 1
     region: content
@@ -86,7 +109,7 @@ content:
     settings:
       link: false
     third_party_settings: {  }
-    weight: 2
+    weight: 3
     region: content
 hidden:
   body: true
@@ -99,11 +122,13 @@ hidden:
   display_media_thumbnail: true
   field_agent_relationship: true
   field_alternative_title: true
+  field_appropriate_reuse: true
   field_assessment_type: true
   field_contributor: true
-  field_creator: true
   field_creators_and_contributors: true
   field_data_service: true
+  field_data_type: true
+  field_data_type_description: true
   field_date_accepted: true
   field_date_available: true
   field_date_issued: true
@@ -111,6 +136,7 @@ hidden:
   field_date_updated: true
   field_date_valid: true
   field_date_withdrawn: true
+  field_description_of_personal_da: true
   field_doi: true
   field_download_url: true
   field_edtf_date_accepted: true
@@ -128,6 +154,7 @@ hidden:
   field_frascati_subject_category: true
   field_funding_reference: true
   field_gemini_uri: true
+  field_inappropriate_reuse: true
   field_instrument: true
   field_language: true
   field_license: true
@@ -136,10 +163,15 @@ hidden:
   field_model: true
   field_object_specification: true
   field_object_type: true
+  field_personal_data: true
+  field_personal_data_legal_basis: true
+  field_personal_data_risk_mitigat: true
+  field_personal_data_risks: true
   field_publication_year: true
   field_publisher_dm: true
   field_related_people: true
   field_related_resource: true
+  field_research_questions: true
   field_resource_type: true
   field_series_information: true
   field_table_of_contents: true
