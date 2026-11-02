@@ -88,6 +88,7 @@ content:
     label: hidden
     settings:
       name_format: simple_name
+      inline: '1'
       affiliation: 0
       contact: 0
       link: 0
