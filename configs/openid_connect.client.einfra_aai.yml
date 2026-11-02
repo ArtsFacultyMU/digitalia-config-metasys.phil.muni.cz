@@ -6,8 +6,8 @@ id: einfra_aai
 label: e-INFRA
 plugin: generic
 settings:
-  client_id: c024ba8e-8e60-492a-8b02-d1ff4b4e9a41
-  client_secret: b10eadac-b212-4f5f-b355-f73448c2e84834fa6f0d-e421-4ea2-b190-9bea2ec57a82
+  client_id: null
+  client_secret: null
   provider_slug: ''
   iss_allowed_domains: digitalia-platforms.phil.muni.cz
   prompt:
