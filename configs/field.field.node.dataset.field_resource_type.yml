@@ -10,7 +10,7 @@ id: node.dataset.field_resource_type
 field_name: field_resource_type
 entity_type: node
 bundle: dataset
-label: 'Resource type'
+label: 'Resource Type'
 description: 'The general nature or genre of the content of the resource.'
 required: true
 translatable: false

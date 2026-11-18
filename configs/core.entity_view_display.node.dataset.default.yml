@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.dataset.field_contributor
     - field.field.node.dataset.field_creator
     - field.field.node.dataset.field_creators_and_contributors
+    - field.field.node.dataset.field_data_processing
     - field.field.node.dataset.field_data_service
     - field.field.node.dataset.field_data_type
     - field.field.node.dataset.field_data_type_description
@@ -41,6 +42,7 @@ dependencies:
     - field.field.node.dataset.field_funding_reference
     - field.field.node.dataset.field_inappropriate_reuse
     - field.field.node.dataset.field_instrument
+    - field.field.node.dataset.field_is_new_version_of
     - field.field.node.dataset.field_language
     - field.field.node.dataset.field_license
     - field.field.node.dataset.field_member_of
@@ -54,8 +56,11 @@ dependencies:
     - field.field.node.dataset.field_personal_data_risks
     - field.field.node.dataset.field_publication_year
     - field.field.node.dataset.field_publisher_dm
+    - field.field.node.dataset.field_quality_assurance
+    - field.field.node.dataset.field_record_relationships
     - field.field.node.dataset.field_related_people
     - field.field.node.dataset.field_related_resource
+    - field.field.node.dataset.field_representativeness
     - field.field.node.dataset.field_research_questions
     - field.field.node.dataset.field_resource_type
     - field.field.node.dataset.field_series_information
@@ -64,6 +69,7 @@ dependencies:
     - field.field.node.dataset.field_tags
     - field.field.node.dataset.field_technical_info
     - field.field.node.dataset.field_temporal_subject
+    - field.field.node.dataset.field_version
     - node.type.dataset
   module:
     - controlled_access_terms
@@ -247,6 +253,7 @@ content:
       contact: '1'
       link: '1'
       note: '1'
+      inline: false
     third_party_settings: {  }
     weight: 18
     region: content
@@ -259,8 +266,16 @@ content:
       contact: '1'
       link: '1'
       note: '1'
+      inline: false
     third_party_settings: {  }
     weight: 17
+    region: content
+  field_data_processing:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 51
     region: content
   field_data_service:
     type: link_separate
@@ -497,6 +512,14 @@ content:
     third_party_settings: {  }
     weight: 11
     region: content
+  field_is_new_version_of:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 53
+    region: content
   field_language:
     type: entity_reference_label
     label: inline
@@ -593,8 +616,23 @@ content:
       contact: '1'
       link: '1'
       note: '1'
+      inline: false
     third_party_settings: {  }
     weight: 19
+    region: content
+  field_quality_assurance:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 50
+    region: content
+  field_record_relationships:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 49
     region: content
   field_related_resource:
     type: entity_reference_entity_view
@@ -604,6 +642,13 @@ content:
       link: false
     third_party_settings: {  }
     weight: 14
+    region: content
+  field_representativeness:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 52
     region: content
   field_research_questions:
     type: text_default
@@ -664,6 +709,14 @@ content:
       link: true
     third_party_settings: {  }
     weight: 12
+    region: content
+  field_version:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 17
     region: content
   media_of_entity_view_1:
     settings: {  }

@@ -1,0 +1,24 @@
+uuid: bc58acab-d487-4601-b033-8c8e864965b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_quality_assurance
+    - filter.format.basic_html
+    - node.type.dataset
+  module:
+    - text
+id: node.dataset.field_quality_assurance
+field_name: field_quality_assurance
+entity_type: node
+bundle: dataset
+label: 'Quality Assurance'
+description: 'How was the accuracy and reliability of data collection verified? → E.g., collection methodology, quality control, validation. '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_inappropriate_reuse
+    - filter.format.basic_html
     - node.type.dataset
   module:
     - text
@@ -11,12 +12,13 @@ id: node.dataset.field_inappropriate_reuse
 field_name: field_inappropriate_reuse
 entity_type: node
 bundle: dataset
-label: 'Dataset limitations and inappropriate reuse'
+label: 'Dataset Limitations and Inappropriate Reuse'
 description: 'For what purposes is the dataset unsuitable? Describe its limitations—for example, due to incompleteness, bias, limited scope, or the methodology used to collect the data.'
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  allowed_formats: {  }
+  allowed_formats:
+    - basic_html
 field_type: text_long

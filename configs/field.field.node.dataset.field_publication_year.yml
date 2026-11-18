@@ -9,7 +9,7 @@ id: node.dataset.field_publication_year
 field_name: field_publication_year
 entity_type: node
 bundle: dataset
-label: 'Publication year'
+label: 'Publication Year'
 description: ''
 required: true
 translatable: false

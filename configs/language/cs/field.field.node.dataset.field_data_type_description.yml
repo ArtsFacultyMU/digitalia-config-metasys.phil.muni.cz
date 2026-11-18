@@ -1,0 +1,2 @@
+label: 'Popis dat a typů záznamů'
+description: 'Jaký typ dat dataset obsahuje a co představuje jeden záznam? Typem dat se rozumí např. data číselná, textová, obrazová, prostorová nebo 3D. Záznam je to, o čem jsou v datasetu shromažďovány informace, např. osoba, dokument, organizace, událost, měření nebo artefakt.'

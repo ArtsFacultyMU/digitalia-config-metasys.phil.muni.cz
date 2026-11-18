@@ -1,0 +1,19 @@
+uuid: 45aa1124-abbe-4aa5-9a78-dd68f98978b9
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_data_processing
+field_name: field_data_processing
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

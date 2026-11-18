@@ -1,0 +1,24 @@
+uuid: b14d940f-de60-46fd-bbc5-89aa3e9e7d77
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_record_relationships
+    - filter.format.basic_html
+    - node.type.dataset
+  module:
+    - text
+id: node.dataset.field_record_relationships
+field_name: field_record_relationships
+entity_type: node
+bundle: dataset
+label: 'Relationships Between Records'
+description: 'Are there relationships between the records? What kind? E.g., relationships between persons, objects, locations.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

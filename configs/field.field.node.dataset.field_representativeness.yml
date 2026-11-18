@@ -1,0 +1,24 @@
+uuid: c2281868-6c91-45a4-a0ac-0718fffdcdb9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_representativeness
+    - filter.format.basic_html
+    - node.type.dataset
+  module:
+    - text
+id: node.dataset.field_representativeness
+field_name: field_representativeness
+entity_type: node
+bundle: dataset
+label: Representativeness
+description: 'What portion of the ideal whole does the dataset represent? What is this target whole (population) and how was it sampled? E.g., the complete set vs. a sample; the target population.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

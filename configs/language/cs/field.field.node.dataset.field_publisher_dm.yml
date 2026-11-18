@@ -1,0 +1,11 @@
+label: Vydavatel
+default_value:
+  -
+    first_names: ''
+    last_names: ''
+    institution_affiliation: ''
+    department: ''
+    contact: ''
+    note: ''
+    private_note: ''
+    extra: ''

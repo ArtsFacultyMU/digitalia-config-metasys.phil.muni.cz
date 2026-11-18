@@ -10,7 +10,7 @@ id: node.dataset.field_language
 field_name: field_language
 entity_type: node
 bundle: dataset
-label: 'Dataset language'
+label: 'Dataset Language'
 description: 'Language of the resource content'
 required: false
 translatable: false

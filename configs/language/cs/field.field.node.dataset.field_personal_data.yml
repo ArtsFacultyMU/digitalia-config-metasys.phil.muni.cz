@@ -1,0 +1,5 @@
+label: 'Obsahuje dataset osobní údaje?'
+description: 'Např. jména, data narození, fotografie, identifikátory.'
+settings:
+  on_label: Ano
+  off_label: Ne

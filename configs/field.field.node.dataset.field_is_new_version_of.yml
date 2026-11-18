@@ -1,0 +1,28 @@
+uuid: 2689e851-8739-4567-8ffa-8d49e0c2ee3c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_is_new_version_of
+    - node.type.dataset
+id: node.dataset.field_is_new_version_of
+field_name: field_is_new_version_of
+entity_type: node
+bundle: dataset
+label: 'Is new version of'
+description: 'Reference to previous version of the record. If the previous version was not created in this system, use Related Resource with "is previous version of" relation type.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      dataset: dataset
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,24 @@
+uuid: b493cfa0-0639-4381-9601-62f83ee17d01
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_data_processing
+    - filter.format.basic_html
+    - node.type.dataset
+  module:
+    - text
+id: node.dataset.field_data_processing
+field_name: field_data_processing
+entity_type: node
+bundle: dataset
+label: 'Data Processing'
+description: 'How was the data modified after collection? E.g., cleaning, annotation, transformation. Is the original version of the data available, or is the processing procedure documented? E.g., raw or instrument data, documentation of processing steps.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

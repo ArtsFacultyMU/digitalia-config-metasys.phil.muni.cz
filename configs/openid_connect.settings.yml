@@ -19,10 +19,13 @@ role_mappings:
   fedoraadmin:
     - nic
     - 'urn:geant:cesnet.cz:group:VO_digitalia:lindat%20islandora%20admins#perun.cesnet.cz'
-    - 'urn:geant:cesnet.cz:group:VO_repo_archaeovault_prod#perun.cesnet.cz'
   content_editor_junior:
     - nic
   data_curator:
     - nic
+    - 'urn:geant:cesnet.cz:group:VO_digitalia:digitalia_curators#perun.cesnet.cz'
   contributor:
     - nic
+    - 'urn:geant:cesnet.cz:group:VO_digitalia:repository:Metasys#perun.cesnet.cz'
+force_reset_role_mappings: true
+autostart_login: false
