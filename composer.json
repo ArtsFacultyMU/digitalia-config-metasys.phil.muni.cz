@@ -115,8 +115,7 @@
     },
     "conflict": {
         "drupal/drupal": "*",
-        "drupal/core": "<=8",
-        "consolidation/robo": ">=5.2.0"
+        "drupal/core": "<=8"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
@@ -191,9 +190,6 @@
 		"Use 'eduperson_entitlement' as source for group mappings": "./patches/OpenIDConnect-3.0.0-alpha9.patch",
 		"textfield -> textarea": "./patches/OpenIDConnectSettingsForm.patch"
             },
-	    "drupal/gin": {
-		"Fix missing help text icon": "./patches/gin_form-element.html.twig.patch"
-	    },
             "drupal/csvfile_formatter": {
                 "Add dynamic csv file parameters": "./patches/CSVFileFormatter.patch",
                 "Add dynamic csv file parameters 2": "./patches/DataTablesSettingsForm.patch"

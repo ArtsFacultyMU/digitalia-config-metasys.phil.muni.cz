@@ -29,6 +29,7 @@ dependencies:
     - masquerade
     - media
     - node
+    - openid_connect
     - persistent_identifiers
     - system
     - taxonomy
@@ -83,6 +84,7 @@ permissions:
   - 'edit terms in instrument'
   - 'edit terms in instrument_type'
   - 'manage media'
+  - 'manage own openid connect accounts'
   - 'masquerade as authenticated'
   - 'masquerade as contributor'
   - 'mint persistent identifiers'
